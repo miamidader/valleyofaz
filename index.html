@@ -65,8 +65,8 @@ details.src summary{cursor:pointer;font-weight:600}
 </div>
 <script>
 (function(){
-var DATA=null,cat="All",city="All",open=null;
-var CATS=["All","Crime & Safety","Roads & Weather","Government","Community"];
+var DATA=null,cat="All",city="All",open=null,LIMIT=30,more={};
+var CATS=["All","Crime & Safety","Roads & Weather","Government","Sports","Community"];
 var $=function(i){return document.getElementById(i)};
 function el(t,c,x){var n=document.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n}
 function safe(u){return /^https?:\/\//i.test(u)?u:"#"}
@@ -96,17 +96,20 @@ function itemEl(i,pick){
 function section(title,items,cls,pick){
  if(!items.length)return null;
  var f=document.createDocumentFragment();f.appendChild(el("h2",cls,title));
- var l=el("div","list");items.forEach(function(i){l.appendChild(itemEl(i,pick))});f.appendChild(l);return f}
+ var shown=more[title]?items:items.slice(0,LIMIT);
+ var l=el("div","list");shown.forEach(function(i){l.appendChild(itemEl(i,pick))});
+ if(shown.length<items.length){var b=el("button","act","Show "+(items.length-shown.length)+" more");b.type="button";b.style.cssText="display:block;width:100%;padding:12px;border-top:1px solid var(--line)";b.onclick=function(){more[title]=1;render()};l.appendChild(b)}
+ f.appendChild(l);return f}
 function render(){
  var items=DATA.items;
  var cats=$("cats");cats.textContent="";
  CATS.forEach(function(c){var n=items.filter(function(i){return (c==="All"||i.cat===c)&&inCity(i)}).length;
-  cats.appendChild(chip(c,n,c===cat,function(){cat=c;open=null;render()}))});
+  cats.appendChild(chip(c,n,c===cat,function(){cat=c;open=null;more={};render()}))});
  var counts={};items.forEach(function(i){if(inCat(i))(i.cities||[]).forEach(function(c){counts[c]=(counts[c]||0)+1})});
  var cs=$("cities");cs.textContent="";
- cs.appendChild(chip("All cities",null,city==="All",function(){city="All";open=null;render()},true));
+ cs.appendChild(chip("All cities",null,city==="All",function(){city="All";open=null;more={};render()},true));
  Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).forEach(function(c){
-  cs.appendChild(chip(c,counts[c],city===c,function(){city=c;open=null;render()},true))});
+  cs.appendChild(chip(c,counts[c],city===c,function(){city=c;open=null;more={};render()},true))});
  var out=$("out");out.textContent="";
  var f=items.filter(function(i){return inCat(i)&&inCity(i)});
  if(!f.length){out.appendChild(el("div","empty","Nothing here yet. Try All cities."));}

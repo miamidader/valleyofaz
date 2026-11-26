@@ -70,7 +70,13 @@ def text_of(el, *names):
 
 def parse_feed(xml_bytes):
     """Return a list of dicts: title, link, summary, published (datetime or None)."""
-    root = ET.fromstring(xml_bytes)
+    try:
+        root = ET.fromstring(xml_bytes)
+    except ET.ParseError:
+        text = xml_bytes.decode("utf-8", errors="replace")
+        text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", text)
+        text = re.sub(r"&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)", "&amp;", text)
+        root = ET.fromstring(text.encode("utf-8"))
     items = []
     if root.tag == ATOM + "feed":
         for e in root.findall(ATOM + "entry"):
@@ -126,6 +132,11 @@ def is_breaking(text, words):
     return any(w in low for w in words)
 
 
+SPORTS_SOURCES = {"maxpreps", "yahoo sports", "sports illustrated", "espn", "the athletic", "bleacher report", "cbs sports", "247sports", "on3", "rivals", "fox sports", "nbc sports", "sportskeeda", "fansided", "si.com", "arizona sports", "azpreps365", "just baseball", "the sporting news"}
+DROP_SOURCES = {"wisevoter"}
+DROP_TITLE_WORDS = ["obituary", "obituaries"]
+SPORTS_WORDS = ["suns", "cardinals", "diamondbacks", "d-backs", "coyotes", "mercury", "sun devils", "asu ", "wildcats", "high school", "playoff", "nfl", "nba", "mlb", "nhl", "wnba", "ncaa", "football", "basketball", "baseball", "softball", "volleyball", "soccer", "golf", "quarterback", "touchdown", "recruit", "tournament", "preseason", "postseason", "box score", "halftime", "all-star"]
+
 CATEGORIES = [
     ("Crime & Safety", ["shot", "shooting", "killed", "homicide", "murder", "police", "arrest", "suspect", "stabbing", "chase", "fire", "explosion", "standoff", "barricade", "missing", "amber alert", "indicted", "sentenced", "drowning", "rescue", "deputies", "sheriff"]),
     ("Roads & Weather", ["crash", "collision", "freeway", "highway", "i-10", "i-17", "loop 101", "loop 202", "sr 51", "closure", "closed", "traffic", "adot", "light rail", "forecast", "weather", "storm", "rain", "heat", "flood", "wind", "monsoon", "airport", "sky harbor"]),
@@ -133,8 +144,10 @@ CATEGORIES = [
 ]
 
 
-def categorize(text):
+def categorize(text, source=""):
     low = text.lower()
+    if source.lower() in SPORTS_SOURCES or any(w in low for w in SPORTS_WORDS):
+        return "Sports"
     for name, words in CATEGORIES:
         if any(w in low for w in words):
             return name
@@ -195,11 +208,16 @@ def main():
             summary = clean(raw["summary"])
             if summary.lower().startswith(title.lower()[:40]):
                 summary = ""  # Google News repeats the headline as the summary
+            if any(w in title.lower() for w in DROP_TITLE_WORDS):
+                continue
             published = raw["published"] or run_time
             if published < cutoff:
                 continue
             item_id = hashlib.sha1(link.encode()).hexdigest()[:16]
             blob = title + " " + summary
+            cities_found = tag_cities(blob, matchers, feed.get("city"))
+            if not cities_found:
+                continue  # broad searches pick up unrelated stories; keep only ones naming a Valley city
             collected[item_id] = {
                 "id": item_id,
                 "title": title,
@@ -208,9 +226,9 @@ def main():
                 "source": source,
                 "feed": feed["id"],
                 "group": feed.get("group", ""),
-                "cities": tag_cities(blob, matchers, feed.get("city")),
+                "cities": cities_found,
                 "breaking": is_breaking(title, breaking_words),
-                "cat": categorize(title + " " + summary),
+                "cat": categorize(title + " " + summary, source),
                 "published": published.isoformat(),
                 "first_seen": previous.get(item_id, {}).get("first_seen", run_time.isoformat()),
             }
@@ -226,8 +244,10 @@ def main():
             except (ValueError, KeyError):
                 pass
 
+    for item_id in [k for k, v in collected.items() if v.get("source", "").lower() in DROP_SOURCES]:
+        del collected[item_id]
     for item in collected.values():
-        item.setdefault("cat", categorize(item["title"] + " " + item.get("summary", "")))
+        item["cat"] = categorize(item["title"] + " " + item.get("summary", ""), item.get("source", ""))
 
     # Drop near-duplicates (same headline from different feeds); keep the earliest published.
     by_title = {}
