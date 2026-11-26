@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T20:53:26.584938+00:00",
+ "generated": "2026-11-26T21:28:57.337518+00:00",
  "cities": [
   "Phoenix",
   "Mesa",
@@ -32,9 +32,9 @@
    "id": "phx-gov",
    "name": "City of Phoenix Newsroom",
    "group": "Official",
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: not well-formed (invalid token): line 60, column 30"
+   "ok": true,
+   "count": 7,
+   "error": ""
   },
   {
    "id": "gn-phoenix",
@@ -49,7 +49,7 @@
    "name": "Google News: Mesa",
    "group": "News search",
    "ok": true,
-   "count": 56,
+   "count": 52,
    "error": ""
   },
   {
@@ -57,7 +57,7 @@
    "name": "Google News: Chandler",
    "group": "News search",
    "ok": true,
-   "count": 21,
+   "count": 22,
    "error": ""
   },
   {
@@ -65,7 +65,7 @@
    "name": "Google News: Gilbert",
    "group": "News search",
    "ok": true,
-   "count": 49,
+   "count": 44,
    "error": ""
   },
   {
@@ -73,7 +73,7 @@
    "name": "Google News: Scottsdale",
    "group": "News search",
    "ok": true,
-   "count": 56,
+   "count": 53,
    "error": ""
   },
   {
@@ -81,7 +81,7 @@
    "name": "Google News: Tempe",
    "group": "News search",
    "ok": true,
-   "count": 29,
+   "count": 58,
    "error": ""
   },
   {
@@ -89,7 +89,7 @@
    "name": "Google News: Glendale",
    "group": "News search",
    "ok": true,
-   "count": 34,
+   "count": 26,
    "error": ""
   },
   {
@@ -97,7 +97,7 @@
    "name": "Google News: Peoria",
    "group": "News search",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": ""
   },
   {
@@ -105,7 +105,7 @@
    "name": "Google News: Surprise",
    "group": "News search",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": ""
   },
   {
@@ -113,7 +113,7 @@
    "name": "Google News: Goodyear",
    "group": "News search",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": ""
   },
   {
@@ -129,7 +129,7 @@
    "name": "Google News: Buckeye",
    "group": "News search",
    "ok": true,
-   "count": 7,
+   "count": 5,
    "error": ""
   },
   {
@@ -137,7 +137,7 @@
    "name": "Google News: Queen Creek",
    "group": "News search",
    "ok": true,
-   "count": 4,
+   "count": 14,
    "error": ""
   },
   {
@@ -145,7 +145,7 @@
    "name": "Google News: Fountain Hills",
    "group": "News search",
    "ok": true,
-   "count": 17,
+   "count": 26,
    "error": ""
   },
   {
@@ -153,7 +153,7 @@
    "name": "Google News: Paradise Valley",
    "group": "News search",
    "ok": true,
-   "count": 38,
+   "count": 19,
    "error": ""
   },
   {
@@ -161,7 +161,7 @@
    "name": "Google News: Sun City",
    "group": "News search",
    "ok": true,
-   "count": 14,
+   "count": 11,
    "error": ""
   },
   {
@@ -169,7 +169,7 @@
    "name": "Google News: West Valley small towns",
    "group": "News search",
    "ok": true,
-   "count": 15,
+   "count": 10,
    "error": ""
   },
   {
@@ -177,11 +177,91 @@
    "name": "Google News: Cave Creek, Carefree, Anthem, Laveen",
    "group": "News search",
    "ok": true,
-   "count": 16,
+   "count": 4,
    "error": ""
   }
  ],
  "items": [
+  {
+   "id": "c1a5dc630b5175a8",
+   "title": "Arizona's growth story isn't over, but its economy enters a new phase in 2027",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNEhmMGZzdnpMUkxQa3pGVHpqV0NxNzA2eXhlQmlXNDA4aGxrTnN1Z0Z0NmdwUlpkSVFUb1BPS0Z3VDZqN2wybWprdWFEY29yaUF0c3dvQ1pJa2djVmdieEZocXBvNlFQMVhCbVJFVWxTTlgwd01FTFpvYVZERVJWaXNGMGNPTFpuYVlfSDBDSGdIVzcxaDdCVmxxc21DQXpo?oc=5",
+   "summary": "",
+   "source": "The Business Journals",
+   "feed": "gn-phoenix",
+   "group": "News search",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-26T21:00:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "087c1839e2109bb3",
+   "title": "Sun City church to host chorale event",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObzF0N0xjNE5LRkJubWN5WFhFQ2lEenVxWms3bkpyNDgwMm1TUDBhSFF6cmZBQll0MzVOTUhwdGMtdnpBUkJ2RWNpUXFNSlktQUlwbDNrbjJWd0tHNXl5QTZhVXVNM0o5N2RGYi1QM0R0RWxyTVhNWTJLbF9vNlhBNExUX3ZqOHdtcmk0ZENCem1DOUhDak9qM3hPc0JlX3Y2X01aVk84T3UzTFU?oc=5",
+   "summary": "",
+   "source": "www.yourvalley.net",
+   "feed": "gn-sun-city",
+   "group": "News search",
+   "cities": [
+    "Sun City"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-26T21:00:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "40c35ac374cdaefb",
+   "title": "Packers’ Rising Star Puts Teammates on Notice After Loss",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVzFuMGlGa3VVeXVaY2NMYjNZWG5jWG5nUWl0NVdVVUs4TzRXbnhBODFqREU3S2hKV2JQVGRQSnJlZHdIQ1A3QWctNml6dnV0QXFneUVMLVNaUmFzSnZkNi1LMy1OZVQ0QmtaWmRGaUl1bXB0dEtBcDFvM2h5NTdHbHR5clNocnRPQU85cTRldDU?oc=5",
+   "summary": "",
+   "source": "Yahoo Sports",
+   "feed": "gn-glendale",
+   "group": "News search",
+   "cities": [
+    "Glendale"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T20:33:55+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "d5b2a2b674009881",
+   "title": "Arizona has chance to make program history in 100th Territorial Cup",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaUJPOHNDTmtfdTRWU3lSeUNxMHlvcl9RTk13Q1NoRF9YT0ZXY3dLd2c3MURuSHBHWlRQRlVVM1RnU2VnYkRvbmVBcGIxLVpDb3RYdTI3d0FuWHI0NFV5emc0bFNWd284V1ZOS29LUHQ4d0V6MWdsalJCcThHWEg1amFtdmY2RGl0MXlHdTZNOGdjbG0tVGNNQ2RpRnhXNjJjeWJjRzFvd1FfWEw4N1AxNw?oc=5",
+   "summary": "",
+   "source": "Sports Illustrated",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T20:17:52+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "59225d2289affcf3",
+   "title": "Social media reacts to Kansas State's loss to Arizona",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMk5fZnZfZHRqR1VCZ0ptTVAzanFJaDRLQWR2a2d4aVVlRDl6SmlPLXFrNHZJUGp2V1ZLZVI0WEFiZzJjU21IaW1VNkVaa3lud216RVdyWHVpb0VibncxcWxWcjFwci00UDdsYjN3OTM3N04zc3FqbVRUbnNtc1VManVDRDVtQ3dzYXBlVHc3SktMQWJXXzhZVUdpclNhZ296S3VKNUtxQjJwZGg0dVFmdGVvMzE5Q1JxcVU5TmNBdTVQMDV3RjlsTU1Sc3cxeWpB?oc=5",
+   "summary": "",
+   "source": "247Sports",
+   "feed": "gn-gilbert",
+   "group": "News search",
+   "cities": [
+    "Gilbert"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T20:12:14+00:00",
+   "first_seen": "2026-11-26T13:39:29.887397+00:00"
+  },
   {
    "id": "f7d3beac262b9203",
    "title": "Tucked Into A Phoenix Neighborhood, This Tiny Burro Window Has Fed Locals For Decades",
@@ -220,10 +300,10 @@
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaVpzTThfR1ZKd3Y4bEN3cmVRc004MloxWnd3QUJBV3JxOXE5bXFIb0x4MjlpOVhsZWhDMXFVUlQyZ1VXVUE1TDhLM3JBMUZJRHZOQ1ZyS081ZmhRdmpibXlieDdtX2pmbDNqTy1acHdFNzluNUZCV1MtRUlUQ0d0V2Q5cXR4RkcxVVd6Mm1zVzhlRGREYmwtRmhxZDhYMmlOWXc?oc=5",
    "summary": "",
    "source": "Fast Food Club",
-   "feed": "gn-gilbert",
+   "feed": "gn-tempe",
    "group": "News search",
    "cities": [
-    "Gilbert"
+    "Tempe"
    ],
    "breaking": false,
    "cat": "Community",
@@ -300,10 +380,10 @@
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNV0QyTEhGSGVmUlI3cjJTLXdFOU4zTm1uMDFLN2JkN2o5U0JVYVpZd0N5Q2NqUDdkeUFIR1ZQcUpoLWpKZ2lBR3JTdlBZTTBNTVJsYmd4OHVtN0hBUVlaSVB4STQxeDhaVUFhai1Xc0NZcDhqY1dCTm1yZVZveE0tMk1Rak42M2YzdUlRNThmMjJMdVdLWFRSTXcxOWg2SFltdUE?oc=5",
    "summary": "",
    "source": "AZ Family",
-   "feed": "gn-mesa",
+   "feed": "gn-phoenix",
    "group": "News search",
    "cities": [
-    "Mesa"
+    "Phoenix"
    ],
    "breaking": true,
    "cat": "Crime & Safety",
@@ -389,6 +469,22 @@
    "cat": "Community",
    "published": "2026-11-26T17:51:42+00:00",
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
+  },
+  {
+   "id": "1aae55d63825b258",
+   "title": "What changes will the Cardinals defense make under interim DC Teryl Austin?",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcVU5LWpmRmJ6LXJXRjhxSTEzS01QZF80NmhoRmNUMVc0YVBnY2xSX05DcEthRk80SXptR3NRQjk3SW45enhqNTZSNkZWM1E5cTAtQkp3c0dMYndmTnF6XzRkUXMtQ3Uwc3I3NDRnMWRnQ3NibFJ1b1VrRC0zZW9HeG1R?oc=5",
+   "summary": "",
+   "source": "Arizona Sports",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T17:48:07+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "fefd697e31776eff",
@@ -570,6 +666,22 @@
    "first_seen": "2026-11-26T20:53:26.584938+00:00"
   },
   {
+   "id": "adfc1de3a51a247f",
+   "title": "Chandler vs Highland - Girls Varsity Basketball 12/07/2026 | Watch Live & On Demand",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQS0V4SHJuczIwU3Y4VFY0OUN6MHNhVVVRUjYySVZhUEx3ZnVrUkplTFlwZ2hmOG5Xb3JkNkdWRjBGYU9jM0hmZlZJN200WmdpdElMZ0Y4V25obWRnV2RjMmkxMmJ1eV9WV0NMb0VZWHBkYmdHLThUOUVObERiUHBBOGgtaHVwVEtQ?oc=5",
+   "summary": "",
+   "source": "NFHS Network",
+   "feed": "gn-chandler",
+   "group": "News search",
+   "cities": [
+    "Chandler"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T16:43:58+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "c3be7f353c95c700",
    "title": "CHASSE Building Team assembles 3,200 Thanksgiving meal boxes for Arizona families",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQjQ5YnpfVmJuc0JEWlpwUHlVelZucmFpMUdmVWR5R1lDZmg4SmZTYXgybWR1MGREMG95NUpvejRDRjdGdnlmdHBJa0N0Sk9VRjlIUTVYODVGSTFhYlZjSlQweVo3bmdwYVk2LUV5MHlrMWFxd3dEQmR5QkNqbVowTllma1d4VE81T3k3ZGFxTFEzR211NkEzWGUyVTRyaTBDeXczTmNPLUhoVGhjUkZSMXNCdFdUVDB1U25kNWpOVHZBMl9WdDFJ0gHHAUFVX3lxTE9CNDliel9WYm5zQkRaWnBQeVV6Vm5yYWkxR2ZVZHlHWUNmaDhKZlNheDJtZHUwZEQwb3k1Sm96NENGN0Z2eWZ0cElrQ3RKT1VGOUhRNVg4NUZJMWFiVmNKVDB5WjduZ3BhWTYtRXkweWsxYXF3d0RCZHlCQ2ptWjBOWWZrV3hUTzVPeTdkYXFMUTNHbXU2QTNYZTJVNHJpMEN5dzNOY08tSGhUaGNSRlIxc0J0V1RUMHVTbmQ1ak5UdkEyX1Z0MUk?oc=5",
@@ -618,6 +730,22 @@
    "first_seen": "2026-11-26T20:53:26.584938+00:00"
   },
   {
+   "id": "eaaab704741e1f7f",
+   "title": "Salvation Army hosts Thanksgiving Dinner in Phoenix",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbkxCZ2RxSWw1WjgxTFdydFZCNVByN252RGRpVFBhdlE2VUNKdTk3bWM1RV9SYngzNUZrNkkyT0RjQll1eTg2MDI4TjM4a1JmMkU3OWI2SUdiQVlNeFVrOTNFYTdSQktsZ2dkaHkxRHczZnlJS0N4aWNqVjI3WS00VmdKR1daN1Z3bUZEVU9Va1AyaVU2dHc?oc=5",
+   "summary": "",
+   "source": "AZ Family",
+   "feed": "gn-phoenix",
+   "group": "News search",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-26T16:30:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "8e8894ddd4742b1b",
    "title": "Cincinnati Reds Bring Back Young Infielder on Minor League Deal",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOFJOU2tZUXJwNTJXNXNoVllNWTVtNVFjUW4zaDk5S1lfc1h1dkNudUxSS1NPZktHOUp2dExEUmdWeDF1RnhGNnBBR3AxS0lRdlE0dFZlYU1yVi1sZDRGVDVkNlZBdC1uaHVycF9lRUpzdTdPUDhvSW81RzA5N1o5RUg2eGE3ZFFGVzJncnJB?oc=5",
@@ -648,6 +776,22 @@
    "cat": "Sports",
    "published": "2026-11-26T16:00:01+00:00",
    "first_seen": "2026-11-26T20:53:26.584938+00:00"
+  },
+  {
+   "id": "c8b920bf1a61ab54",
+   "title": "NASCAR Cup Series Driver Carson Hocevar’s Breakthrough Year Turns Into a Nightmare",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOY2loVW5yZE9DbFpsdmhybHVoSXB6THlNY2lZcTRWemxoeU9OQVRoaFNnemlwXy1WbXJZZVZ3YjFwZVllT3p1ZXlYajd2SzJoX2NfRWVmaFhMNjBYSGViQl9IQ0VhRFgwZ3pGY3NFVUc0YnNfTVlOYVZfU05vY1BnZ2I2eXZGX2pId2NTZkVIa2JqaVgxQmw4dEZlUll6SnQ3?oc=5",
+   "summary": "",
+   "source": "Heavy.com",
+   "feed": "gn-avondale",
+   "group": "News search",
+   "cities": [
+    "Avondale"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-26T15:57:35+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "ba543f38f85374f5",
@@ -763,11 +907,11 @@
    "first_seen": "2026-11-26T20:53:26.584938+00:00"
   },
   {
-   "id": "34b20db51fe6d68d",
+   "id": "445a862e3cb3b613",
    "title": "Washington Commanders vs. Arizona Cardinals Week 12: Gimme Him",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLVc3OUFkQW9mby03ZG5JV2FETzFXeG9rRV9LT3d1MTRhT0xRdGFraFZtRXlVaDNIQk13YUxEV3BRc05fXzk0ZFJwQnA5alc1UUNWdUtpUW41azRoNEVYZ0xwTGp5cUdSSGo0VGJDc3pQQUJoQ2lOcWRzQzFaSlNseWlDVUxXYXNwVDZEcHEzMmNBVXZMRkc1QWV4cw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdVA4Z1JuYUd2VXdPVXlIeXZLR3JrbjdqeTBGT1JYQmg0MWVjTDJJbUw1aWVOZXoxMEhqS2RaZERINnRLMVExdXJlVzgwY1RXWHhSeklwX2lMelF3anVrMUdaV1R2QWdyblQ2aUtlNDNVUEVVUVFacjMwamhZenNPSUFiX1EyRjFCckVIYXZZMA?oc=5",
    "summary": "",
-   "source": "Yahoo Sports",
+   "source": "AOL.com",
    "feed": "gn-glendale",
    "group": "News search",
    "cities": [
@@ -776,12 +920,12 @@
    "breaking": false,
    "cat": "Sports",
    "published": "2026-11-26T15:01:23+00:00",
-   "first_seen": "2026-11-26T20:53:26.584938+00:00"
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
-   "id": "ae4a1d2776bfe722",
+   "id": "8a97af376cc054a4",
    "title": "Community college grads could now get direct admission to ASU",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVmRBWXQxaHBTc21rSExIdFhTbWEtYUxaS284b25fbHVqZlRxQ1ZJQ2xXdEpNSVNxZnQxRXNXWFhJTm0tZ08wSnZEWHRZdjJESE9tY0x0ZWN6dF92YkJyZnowdS1VTk1BM2hXV25kUkYzVjZ2MXREM254ak03dzZQWHM5QXNwRVl1OWdzZTQtaTlrOHdtWUdzWXRuNlA4eFVlRy1V?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRUtLNC1yUUJ6MXRTRkRVUFpRTjFoVFBTVXlwZVB5RWMwRmdVQk4yNEdsSWNIbnVSWUVmbmIwNFBWT3AxY2xVMWFENHFNQW1iTVppQklyMEZlendZUExWZHBZQW9kaDhPMGZiOXhWWHVoSURaMUhmLTg4NjNSYmI1SVIzODMya2l5Si0yZDBYcFdURTlnRHM4S1BtYzk?oc=5",
    "summary": "",
    "source": "Fountain Hills Times Independent",
    "feed": "gn-fountain-hills",
@@ -793,7 +937,7 @@
    "breaking": false,
    "cat": "Sports",
    "published": "2026-11-26T15:00:00+00:00",
-   "first_seen": "2026-11-26T20:53:26.584938+00:00"
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "f39809ffe2b52193",
@@ -860,6 +1004,22 @@
    "first_seen": "2026-11-26T20:53:26.584938+00:00"
   },
   {
+   "id": "895b8d65022b04d5",
+   "title": "Tempe Prep Boys Varsity Soccer @ ALA",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZFRZZ0dPb19GTHNSdUlla00wY0VmbzA1YUZyWTNaaEVTaUJFYi1zSzVDd3pDdWdjX1doelhRZlE1Y3BNRUJiUzlSM1JUSEJnWnVscXdJNDd1SUtERDgyejd2MHVzSVNuUXRlNEdvT3R1dW1uckJGcjB1V2szR05mSEIxcktWZ25GaF9nbzFGY1g2SzVxalJ2bHN0NXF6dTAyTmp6andMeWZkZGd4Q05paXZrdU1LM0tZVERUOVFlRm8wSnRDcDE1OGdHbFdWOHFTbGZZ?oc=5",
+   "summary": "",
+   "source": "MaxPreps",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T14:38:02+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "db03d4de594e437b",
    "title": "MOST ACCURATE FORECAST: Unseasonably warm Thanksgiving across Arizona",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa2lwSWJ4a0NUT1g1dzBaX0lJeUVKYnh0SGZxc0JoTEtuNEpsZWhDa1NPVk8zNnNNa3hxejRYaEVCZ0dtTnZWNFA0WlBBUVVlcDdKQXRTWDU5WW5jbUU2TVNWU1h1aENtZlVvVl9QWnE0UWRid1I2V2ZtZkM4QU9FQ2o2ckNteUtPZUFTX214OC1pWUVYVnJNS0xEdjdrVDg?oc=5",
@@ -913,7 +1073,7 @@
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTFlZZDdISUZQMWVZS0FneDcxOXR2MkJoaWJWeHpaYTRoc1dScWR5TVkyX0pWMkV0SXl0YzRaa2tQOXJWbHR1YkVlWlYxSWRjTmpzX1pqTjlJVmhWajVNSnQzWjNONUJtRUJ2dFFFT0tNR3JjMnRzUk1MVjE2U3ljcjlHbmp2aUx2aEdvWGVRZUU?oc=5",
    "summary": "",
    "source": "Signals AZ",
-   "feed": "gn-chandler",
+   "feed": "gn-fountain-hills",
    "group": "News search",
    "cities": [
     "Chandler"
@@ -988,6 +1148,22 @@
    "first_seen": "2026-11-26T20:53:26.584938+00:00"
   },
   {
+   "id": "c782e0ff5be64d7e",
+   "title": "Chaycelee McRae's Stat Leader Rankings",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQRk03OUI0YjlfQlhHUkRqc3puYWhJQ1VOdWhBRUZFejlfZG81MVVMWGJIOTNWMHllWnFJeWRRbWdkZ3MtcHBwa001MHREZHdoMXdkSDBHWFhxMGpNOFV1YTVtanVyNG5BeWRZSy1xSU1oU2xBcGpxeHREWEV1WWo3T3pDOVY4S1ZWN1FsNjEyNXJQODJubTBQRmFTOU0zWnNjUUhRN2cxbHhIOU5oNFlHcG1UWlBXNzJlSnhjN01jVEU1LTRUS1ozYUFlMlY2Zk9vQ19QT1lUUG5FT2hBTmVFbHBvZ0NhWV9iT1lBY1JlOTZiMG9HTnFB?oc=5",
+   "summary": "",
+   "source": "MaxPreps",
+   "feed": "gn-queen-creek",
+   "group": "News search",
+   "cities": [
+    "Queen Creek"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T13:55:19+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "7c373bd97a4102c0",
    "title": "Arizona weather forecast: Highs near 80 degrees on Thanksgiving Day in Phoenix",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE53T3RIREkwcEQ0SV9vMVVJQml5NFNCUXp6SktxSnpzakJISjY1dW9BRzdELWtBYTlKOTU5NFlNVUR4dG5Gd1NvSmpvVEkybG83TU40V2FDWUg1ZkQ3TW43M3NKVjZOamUxS0NZMXV5eTdXQXd1UWRz?oc=5",
@@ -1025,7 +1201,7 @@
    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNR2x6MmVxM0VWZEFSUkVPanlXWVhGckgwUDBZUnJYRV8yTjR1UlVNYjNCSXkwMWhRME1OdWtFZEEtX0Q3OEVTUTNRLTB0QTVmNVMya0pNQWJ0bXk0c3NtNUw4bnpna2lROXVPTkRHVzZXS3hlb2ZyU1hwWFdNVWZMYTRQX2gzUE1yU0dKYnN3M0RCa3lIbFotRDhuSTRRY3hyMF9KUlFyV1dQRTJBUEliTFNIOUtmYnU2bGNlbHlMYXQwdkh1aEx0VDkxMzZEdEhFbEtBbzdxc1RuY0Q5RUdETg?oc=5",
    "summary": "",
    "source": "MaxPreps",
-   "feed": "gn-gilbert",
+   "feed": "gn-queen-creek",
    "group": "News search",
    "cities": [
     "Gilbert"
@@ -1066,6 +1242,38 @@
    "cat": "Community",
    "published": "2026-11-26T13:04:51+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "ac54b624edbc0ff6",
+   "title": "Why Los Angeles Angels Fans Have Every Reason to Be Thankful Arte Moreno Sold the Team",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQXp2QkxFa01qZTZ2eDZFR3c5QnF6LWI3RU0zbkkzMVBJNmk2S19kNndxUG5obVQxRmphTVctajl3ekNqRWFYTHJfUGp5a0hQdTVjSFdNbS1Sc25qQk9CRy12bmMyS1p2U2tNOTRsRkZUa0NpSDBGcmZUaTJPaWFSYTFMUDFjLUt2aGxqdDU0U201ME1ZVEdsUmpCYmJEd25mTXdaSUdjbHZiM0V5RUVqZ0ZJVTN1VjZVeG9tcFFBeTVEY0hwaEZDd0h2Um1OaEE?oc=5",
+   "summary": "",
+   "source": "Sports Illustrated",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T13:00:02+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "8335212ff13b0ae3",
+   "title": "Arizona football vs. ASU score predictions",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNdVRRZnItbndpVUY0VXgwS0dkYS1BY25NeV9DYzNsb0l3eVh5TExYTjBsMVBCN1lMN01haVJDZDluck9Uc3RaTjhmSVFWQzkxeUQ5eWwwRnhaYlpzV2VrRFpTVXo0TUhtRHh1Smd5VDAwRnlWTFRITFF0M3JIMUVyaFUyQlVwYlpUN0ltRzBzVzdITlRydDl3UXRGR3JhVXprTU1zeEp2Y3VKazJ4NE1na0xkbVphZnRUTkxnRmUwU2dVOFZhd0Fiek0zTVAtVFlWMmpacUdFMzVYTFQ2Q3c?oc=5",
+   "summary": "",
+   "source": "Arizona Desert Swarm",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T13:00:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "2a8997058dcbfe22",
@@ -1113,22 +1321,6 @@
    "breaking": false,
    "cat": "Community",
    "published": "2026-11-26T12:35:00+00:00",
-   "first_seen": "2026-11-26T13:39:29.887397+00:00"
-  },
-  {
-   "id": "59225d2289affcf3",
-   "title": "Social media reacts to Kansas State's loss to Arizona",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMk5fZnZfZHRqR1VCZ0ptTVAzanFJaDRLQWR2a2d4aVVlRDl6SmlPLXFrNHZJUGp2V1ZLZVI0WEFiZzJjU21IaW1VNkVaa3lud216RVdyWHVpb0VibncxcWxWcjFwci00UDdsYjN3OTM3N04zc3FqbVRUbnNtc1VManVDRDVtQ3dzYXBlVHc3SktMQWJXXzhZVUdpclNhZ296S3VKNUtxQjJwZGg0dVFmdGVvMzE5Q1JxcVU5TmNBdTVQMDV3RjlsTU1Sc3cxeWpB?oc=5",
-   "summary": "",
-   "source": "247Sports",
-   "feed": "gn-gilbert",
-   "group": "News search",
-   "cities": [
-    "Gilbert"
-   ],
-   "breaking": false,
-   "cat": "Sports",
-   "published": "2026-11-26T12:23:23+00:00",
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
   },
   {
@@ -1211,6 +1403,22 @@
    "cat": "Sports",
    "published": "2026-11-26T11:30:46+00:00",
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
+  },
+  {
+   "id": "4ae230d0a52d7ea4",
+   "title": "Oklahoma State vs Kansas predictions: Can Cowboys get to 8-4 before bowl season?",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdTBvb3BKZnRvMXpIWVM4ZVYyTzBLWHpTQUNSS3QyYy1PQWFGLWdsRE5GWW0yTXE3bXBhc1o3bk55Z3NndXZVR1NzTFlhWXhjY1Jtc3JPMWM1el9HRE5saU1DZWdoRlRqX2tKVkU4MEFyN1AzMFhTS2RiWGxGRzZjdkZEZnc1QkltNEZjc0F0OWxWdEQxVS1ramlMcU5SSFJHV0ZwSg?oc=5",
+   "summary": "",
+   "source": "Yahoo Sports",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T11:16:24+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "6fbae457e79cb601",
@@ -1309,6 +1517,22 @@
    "first_seen": "2026-11-26T20:53:26.584938+00:00"
   },
   {
+   "id": "4f5e43f95f61b21d",
+   "title": "Williams Field vs Highland - Girls Junior Varsity Basketball 02/08/2027 | Watch Live & On Demand",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZTVJRDF3T1FuUk1xTk5IcEs3WTZTeUpDVGQtT09TQTVMUzNibEVMZExVRHhtcWFJZjFJYmxHSTBuTEFkZE4xZ3RYNnBULWU0bXhrNGR4ZVJrZ2pMU0kwSXdkMEtaMXZRNGlpNzFhRG9NMk9IN3Eta0Q4VUVORm52RDZyRGpEX293b2FWOG5hYw?oc=5",
+   "summary": "",
+   "source": "NFHS Network",
+   "feed": "gn-gilbert",
+   "group": "News search",
+   "cities": [
+    "Gilbert"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T07:08:50+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "1c2db55245191fbc",
    "title": "Hard work pays off for East Valley marching bands",
    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSko3NmdlZXd1ZExoSVJUT1BIOTlIa2lLeWlrYWFvdl9PLXZ2WVlDblVpNklZOHpCTkYzNEsxTDRmVnU0TEVKQ0E0SWRnZE1Ed0JNMVVxbDlQWXdyR21YSEx2amdiekFJU2gwWXRGRElIVHFDLUJpY3VzdGZncGxKRVZQdXRYWGZjc1RkeXZSZ3E2ckhHSVVYNktYbGprRWhzckFCczhveFFBeVEyTTFBVkhOSXhTSFh0MEJfZFcyMmZaSm1kWG1VVU1HQlIwWU9l?oc=5",
@@ -1317,7 +1541,8 @@
    "feed": "gn-gilbert",
    "group": "News search",
    "cities": [
-    "Gilbert"
+    "Gilbert",
+    "Queen Creek"
    ],
    "breaking": false,
    "cat": "Community",
@@ -1582,6 +1807,22 @@
    "first_seen": "2026-11-26T20:53:26.584938+00:00"
   },
   {
+   "id": "6c2a57b4c9303a2c",
+   "title": "Casteel vs Shadow Ridge - Boys Varsity Basketball 11/30/2026 | Live & On Demand",
+   "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNZHdWaDZOU09BejJaSURhU3V1QUJqdWJucnlUeGc0Z0x2eTA5TVJNckVhMjBIYXpjdF9BcWpBSEpzMEFKNDgyX0I4MDMwY3V5QTBpalBpbXpmNzd4aEVNTVFQTUpvX01NOWdFYnV2TlhDTXBFSXlkSHBIRzQ0N1c3M2tvQ0xYZWJURlQ1RElVZjY2dlQ3eTM0WDF0OUtneWg5Ym5YY0JNXzA0NWlqX29GeURaQ1o2Vl9idmVPbWlPYi1GVl9TWndTMzV1VkpKamJuX2RIcFBXd0FLZWRVOUZCbUNzeFZWU0k4S1Jma1pjWS1hTjRZX2oyLUVFRzBwSTVBcll5RWE0YjZRTURzODRDXy1PcmtJTk5lMzJ0YlZUcHY2RTVpTGg1VDZvazk0QzdDMGRB?oc=5",
+   "summary": "",
+   "source": "NFHS Network",
+   "feed": "gn-queen-creek",
+   "group": "News search",
+   "cities": [
+    "Queen Creek"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T03:47:53+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "7f8b869acfe8afbd",
    "title": "Pima Men Improve To 9-0, Women Fall To Scottsdale In ACCAC Openers",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSGRpdTBINlZYc1AzWF9yRzZBNEtOc0pIeTY5cGRwNkxzbGFnRE16V01WRWl2N1NZVnpJZHFKVldQUWJrVVQyTHZVR1dDSXFCMU9WZVpkeGFGQi1JQW13X192a0JZcnFjQU9jMXV2bndYUnY4bllnTnFDaUVtekFUZWc2VjFLUGpnNzlrQU5zXzZxLXpvLW9rb0lUalRTWm9QYXVDOW16ZUd3NW13NExobjQ1aw?oc=5",
@@ -1612,6 +1853,39 @@
    "cat": "Sports",
    "published": "2026-11-26T03:24:41+00:00",
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
+  },
+  {
+   "id": "ea08258a3d41b506",
+   "title": "Tempe vs Glendale - Girls Varsity Basketball 01/29/2027 | Watch Live & On Demand",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb1pFNzlzTUJhcEExcG1ZNUUyVFVSRFBoUnBrcjgtSHlXZ3VlYUdxWmRpdTZXa2dONXhmU1Y0OEljRFBDR09sQ3FOR0VSVUs2TERBeEdvWnJJN0puWU9BMDMxSVl2dW44SFJyZ3ZWb05QQzBQbDRLa2c2cEU1X2J0TQ?oc=5",
+   "summary": "",
+   "source": "NFHS Network",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Glendale",
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T03:12:02+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "4d982d9df600d11b",
+   "title": "GCA Boys Varsity Soccer @ Lincoln Prep",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQlVwbDNNZlZOTEVhQmI3WGdCNEgxVWpCNHF4RFZUUGFRRkpJZVR4S1N2Znpmb2tHazMwQldxQ3p0MU5McGgzb1NZenNDLVY1aE9qV0l4TU1JalNJa3d0NThkcEo3eWxuQ0tFajhiOHBOMTY1ZlZWYXoxaVluYW1lbDBodUZtTi1JYlFuZ25ycHhEQ0xaVlZKaC1TRlFmWGxNSmRtaHBKZ0YtYkxMdHQ3QWtwTTNOZlBSM0p1eklEd2U2TGcyN2hmY2xVdGhhMlJQcFBXejU3WQ?oc=5",
+   "summary": "",
+   "source": "MaxPreps",
+   "feed": "gn-gilbert",
+   "group": "News search",
+   "cities": [
+    "Gilbert"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-26T03:07:52+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "c20442f3f60fc4fe",
@@ -1731,10 +2005,10 @@
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaU1DQ3pUbHllYnloREZSZzFJb0M2Mk1mVVBsZVhjWW9XT3RXaXBSeXVuR21xcUd4TEJMODVub1NfRWlvS2h6RWxqUUtwLXIybi1aYjhvXzN6dzhlajhvZzZOUnpRLUpVdU4tdC1WRWNibnJfTERTWjE2SzhjX2JmcjZDTlFLRFk?oc=5",
    "summary": "",
    "source": "AZ Big Media",
-   "feed": "gn-scottsdale",
+   "feed": "gn-queen-creek",
    "group": "News search",
    "cities": [
-    "Scottsdale"
+    "Queen Creek"
    ],
    "breaking": false,
    "cat": "Community",
@@ -1820,6 +2094,22 @@
    "cat": "Community",
    "published": "2026-11-26T00:49:00+00:00",
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
+  },
+  {
+   "id": "36d99d3d2a660fcb",
+   "title": "Arizona Prosecutors Hit Seven Fraud Cases as Scam Crackdown Targets Elderly Victims",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYzBxQkZXTl9TaHBFZkdqMVNWV2NVcUZhSkFpWlNvMHlGYlZWd19meG5naVRBTEdPOFBQMlhBRUZaS2R2S1N0dmNVbDdfaENqQUNhNXZLRzVocGMzMkhvamQyaTlHUElqS2J0bTRlRzdqZzU5d2VwTDBwcGtiajhyM0V3WG54V0xDNEtZeThUc3pFeUpiUTVJRkpmWmNQNWY4Qk02ZXAxWlpuOVFXekdDaW4wYw?oc=5",
+   "summary": "",
+   "source": "Hoodline",
+   "feed": "gn-fountain-hills",
+   "group": "News search",
+   "cities": [
+    "Fountain Hills"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-26T00:48:45+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "c40141663b74bb25",
@@ -1932,6 +2222,22 @@
    "cat": "Sports",
    "published": "2026-11-26T00:24:47+00:00",
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
+  },
+  {
+   "id": "b84d676a07be2233",
+   "title": "4 kittens tossed into Tempe animal rescue lobby",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGdFNjdlNsSWVscGVDZ096VDVneGl4MXhYQ243UWp0ZGtvb1RtaTg4OV8wXzlZUFpYamhzcEkwOTdLNnV4emEyelZsNHR4Q2ZmLTBCeUxyX3hCNTBfR0VCemdjakZJUdIBa0FVX3lxTE9VaHFQSjB3dHNuQkVVdmpXRkdfODNxSDZycFBqcWdKaEQ2VVU4cGlXY25XUHJHUldYRV80OVpzSkRzNmd0Mm5KdThlZVNfMmtnWlVmS1U5V3FlOFhoUk84dk5IVXBFRmtvc2tr?oc=5",
+   "summary": "",
+   "source": "FOX 10 Phoenix",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": true,
+   "cat": "Crime & Safety",
+   "published": "2026-11-26T00:22:56+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "b675c4d5626b29b3",
@@ -2076,6 +2382,22 @@
    "cat": "Roads & Weather",
    "published": "2026-11-25T23:51:00+00:00",
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
+  },
+  {
+   "id": "9b7605e0ee787749",
+   "title": "41 counts of voyeurism brought against former Tempe school employee by grand jury",
+   "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPUC1BbllYV0NmbEZuaTJkVDBkSzUtQ2J1bWNYWlh4eE1nUHJhNXdlVWNrek5hU0ZkVDlpcjFZdWUwTzQ0dTRqbkJhVWlTOUV6WmxYT3pON3JtaFJES29kQm1EWG1qay1KRGFUVzc0NDhwWHR6anN4RzBJWTBOMF9nc3gySFB6TExkdVRuRnQwU05CcndoMXROQkJxbS1yTVJ3RzA0dlgtVGZDdllyZzFLQlo0WEwwTWppTURJTUwtUFNKWDJ1NGJxNXJ5dU5yQVdpWGlBUG1sZEo4RXdXZDA2WFFWeHJNRHY1OUl4SFZwSldfRG0waTNJeHRxSVMzM0Rhdzc2dC1hNXZ4OVhpZzUtNzJoa0lKd0hCZzVYemZnTQ?oc=5",
+   "summary": "",
+   "source": "12News",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T23:48:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "51d28ac020ad663b",
@@ -2398,6 +2720,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "de2a8d4c13268db2",
+   "title": "Mendoza vs Ortiz: major boxing fight night in Arizona",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQ1BNblB5NnY2ckdEV3Y2X3pFajU1bG9ndGlkaDZHNnF6b19PYlFsaHd5Sl9vRXo0ai1xWlRRa04tWEI5S3dQcEoxOWFxaWtHOEpMdVhnRGxrU2EwSV9sQkNBLTZJU19STWh2UVZ0X0VUSzRCUmszMXk0RHdOaWFkYmtyTVRQZGlrTWFKMlJVNmxqWHhwTG5Xam90ZlU3MlVIRDN1blFtamRkSDFhS3B0V1hYb1hKcGJn?oc=5",
+   "summary": "",
+   "source": "KarloBag.eu",
+   "feed": "gn-glendale",
+   "group": "News search",
+   "cities": [
+    "Glendale"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T22:27:02+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "ef5ab7ea479e2385",
    "title": "Kevin Durant lists Paradise Valley mansion for $13.9 million: Here’s a look",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPLXJPMjdHV2JFV2VELUVIT0ZQYXc0WUZuTC1qWE1ZckR0VWIzUEVaZHVtRWdhei1JQ25QeVFKcUkwN3VHZFE2OWFnNG1wSmR3UU0xY2oxT0QxRWlGTjVDYWhrRTdUUUJIWU9mOFV4TEpIS0tUN1ZVX2RCOGUxWE1JZFpTRFBjTlBGX3BzWGVmY0p0WHZEWFNqQjRSOGZFaHl0VVJTYVZRUmhVamxB?oc=5",
@@ -2494,9 +2832,9 @@
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
   },
   {
-   "id": "ef6e41384bb006d0",
+   "id": "65c46a3972d0afcc",
    "title": "Arpaio: I'm still alive and kicking",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBQUGxvUXZMZ0ptN2JhTy1iWUFjVkszMm5Hei1FMk80cnk0TVdKMTNZTjV0YVBfM1hENHNsZzRUWVdad1ZRQlNzS0V0TnV4UHZoNFF2czF4UFZCaTZ6ZXdyX2lkN19SUGVSTHBoWFdVV2Y5SUFwTjVNaHYyenY?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1iSkpUMUtiMW91VWE4cDNXTTRLVl9pSXZqWlU1eGRnbEhzcWxaM01TVU5MLW5TdEhOT0U5RmhMRjB2Mm9aWTdKbkthQkJRcHNuMWRCRGdHTnRSeGc2T0NYckw4OEZNWHNJRmo0ajlUclFjVkNaZ0cw?oc=5",
    "summary": "",
    "source": "Fountain Hills Times Independent",
    "feed": "gn-fountain-hills",
@@ -2507,7 +2845,7 @@
    "breaking": false,
    "cat": "Community",
    "published": "2026-11-25T22:09:00+00:00",
-   "first_seen": "2026-11-26T13:39:29.887397+00:00"
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "e46f0cb36d36c822",
@@ -2574,6 +2912,22 @@
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
   },
   {
+   "id": "6834e0675c377bf9",
+   "title": "Critical Incident Briefing ? November 11, 2026 ? 7300 W Sells Drive",
+   "link": "https://www.phoenix.gov/newsroom/police-department-news/critical-incident-briefing---november-11--2026---7300-w-sells-dr.html",
+   "summary": "Critical Incident Briefing from November 11, 2026.",
+   "source": "City of Phoenix Newsroom",
+   "feed": "phx-gov",
+   "group": "Official",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T22:00:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "f460985a8eb7584a",
    "title": "How we do our holiday lights matters a lot",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObmI2ZGJZcXdxYXpESzhMZHFvUDZxQkdrS0ctU196d3FDdzFtV3lLa1c2M2p6bWwyY0ZaazViOHExS3U4aVhwVE43aURZQ1ducGpoWmlkY2dLcklGdnBCRXRHSFpZY1VldGdobTc0cGJjdEI2SHZxdUd1Vkl6MjIzdnVJRnlVYjQ?oc=5",
@@ -2604,6 +2958,22 @@
    "cat": "Sports",
    "published": "2026-11-25T21:58:55+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "887110f0c36470ca",
+   "title": "Phoenix Fire and Phoenix Police Launch Drone as a First Responder Program (DFR)",
+   "link": "https://www.phoenix.gov/newsroom/fire-news/phoenix-fire-and-phoenix-police-launch-drone-as-a-first-responde.html",
+   "summary": "The Phoenix Fire Department and Phoenix Police Department have partnered to launch a new Drone as a First Responder (DFR) program, bringing advanced...",
+   "source": "City of Phoenix Newsroom",
+   "feed": "phx-gov",
+   "group": "Official",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": true,
+   "cat": "Crime & Safety",
+   "published": "2026-11-25T21:41:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "33e2a06522265e11",
@@ -2732,6 +3102,22 @@
    "cat": "Sports",
    "published": "2026-11-25T21:22:04+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "bf265ffc7cbe792a",
+   "title": "Former Tempe school surveillance officer faces 41 voyeurism charges, accused of saving videos of students",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOd2wxRjVKck8xMzZ2djE2Tm5hdDZ6WWFtQ3lNTWt3THNrbFJaQVZkaTRDVk1yeUVkTV9wbUpfSndCaGYyS0Z6MW1Xd1YwTFRpazV2aVMzRlVvZWc2blVJR0VtSnMtYl9mTXFLLXdrWURzR2ozVVJuVnJwTmN2MlMtdUFrNDFCQVFXWkVrOEdhb21ManNOX3V0bWc4WTI5VHBIZ2M0b0RIR0lQaDBFR09OQ2piUE1zd2VKTzQ3QTBRRHV3WE9PdEtnUGJ6d2g4THNwWHZLWDdEZ0ZSeXVISy1meTVkX1dsWTZtMzBZM0w3OGpMVG8?oc=5",
+   "summary": "",
+   "source": "ABC15 Arizona",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T21:15:46+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "c3005f64ea640842",
@@ -2927,6 +3313,23 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "7be64c729c1686ac",
+   "title": "Tempe vs Glendale - Boys Varsity Basketball 01/11/2027 | Watch Live & On Demand",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVUlwc01WS2d2NnR1dEY4aEMyc1dHdHZmdXhsSEFfbU11Z2JIUlBqNmE0YXVhS2FlT3hJT0Z4M2VDWkpoY1M2OWltWjdraHJNQ1dpbG9ieGZMVTFvLV82UDFsaWx3RmJuNm5Rd2ZuMEhZNktaelE4b3E2cXY0ci1CSA?oc=5",
+   "summary": "",
+   "source": "NFHS Network",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Glendale",
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-25T19:38:03+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "fbd3e7a27aa11c29",
    "title": "Notice Of Passing: James E. ‘Jim’ Mitchell May 6, 1944 – Nov. 19, 2026",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMXptWWQ0LUxNajVxZDBVTDlHZlNITlVvYVN0enRkRnhHRTdxcDAyc3BNTUFRYmRsLU1CTVczT0RqYlJ2dmE4Q0J3MmxXNXJBRjc4dEJQdV9WanRhZEZYREJjMmRXMmhBNjI3UURwaFRGVFd3TWlMZnlObnA3eG93d2ZRdUkwZkVxNjlQdEI3QUd4TkRzQ2VTV29hTzRVTGlXc2FXNVBB?oc=5",
@@ -3103,6 +3506,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "fea57cdd279b8941",
+   "title": "Autonomous, Self-Powered Cargo Mobility System Explored in Annual Navy Demonstration Event",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNX1RrRU0xaDNvLTE0NFdEWEhMSkN0a1N2QlpUZ1hiY3l2SFM1eGxubjIyVE5rNkdJRDJpMTE0QjU1UU9SU3h5SlJXUE01WFk2LVRXYlZNa3VHaFV3dnVvQjZGOHVQQXItRGRfMFJ0QnBnTmVlWDFGc3dOaEhWa1pHM2k0X2FQZDZIaDNKQTgxbjYtTzJKbU05VGo1akRxd0R0cXlRcjE4c2g5eWFwckNLVFY0NkhrR1JzQ2JxZno3eHc?oc=5",
+   "summary": "",
+   "source": "DVIDS",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T19:01:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "0c1402ea5d77c4fa",
    "title": "Shop, sip, and celebrate local with the Choose Chandler Holiday Pass",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTTlRVEp1ajc5TXdqZHU0aXNEZnNpQ29OTF9wQlVpdHR0TGEyc2duSnRQdHREVnhtOU5NLVI4d1h3bi1LVWZIWUgzQUtVTE5kMEFWU2FNb3E4VUs0ZVp1dXZwdi1uUl9wbjJ5ZWJEZDFxQllXX3ljeDBTWmZSUmRtY2lWUDI5S09acnMzeVFiNEl0aW9CMGw4UjV1eTg?oc=5",
@@ -3199,6 +3618,22 @@
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
   },
   {
+   "id": "d79c7b6e649d4bf5",
+   "title": "Report: OK State coach Eric Morris extended through 2032",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMU5NLTlCLXA2aENicW8xSVUyZDZEVV80c25VUzlsaTA1NmFDekVRbklPd2RwM3pqRDJlUUtVd0hqMHQ2S0ZldGg3S21aMW12ZDZqZ2NYaExNb0VnV1MzTV9FUm1yd2pqYnltemk4bzhWQVctZEFIWHFLT2V5Z1dQejg1RVB3ZW5reVlPMzd0NkpsYkpLaUFURDFWcllZNWhQbzNIS3Bn?oc=5",
+   "summary": "",
+   "source": "Reuters",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T18:39:43+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "c2942219af8badfd",
    "title": "Owners of Bagelero in south Phoenix talk AZ flavors, competing with private equity-backed pop-ups",
    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaS1IeDBlWjU3NnA0WkFOV28waWZzUWJEVGpiNTYwY1RULXQ0cENpQnROeUlpYmF0cnltLTJTbHFkb2JLQjVFMkFWSW1wUFBYTGxuX0FSZGN6ck1DZEx5R0kwczJNN1hzTm1NanVjbEp1U2xfZGNxVHNWU3Blc3N2dnNWeVVUY3Z2VlhKRUU5N1hOVkU5WnZmdC1fTHBTN0ZYd2JEcElHQmxMdmZIY2FNbjdocDJrdzhjSEMtWkZQSkQtclVlaGVRTVRzUEtQSlhnYkJV?oc=5",
@@ -3236,10 +3671,10 @@
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wM3hYTUNQX1ZnU1ZSZld2OHVoMVZpX3g3X0MzRmEzN0YzdnplalhILWVUVzB1R01KQWFmSDZoMjd1YnlFeTM4NHIyQktWYXlHbXcxckJ6Y0dJdFU0VmxpRG1PR0dOZ9IBa0FVX3lxTE44SVE3dzBlcFBZQWN3V2E2UVZDTEk5UWMzN1lORG52bnVaM2pYSEs1UE81OXhnajBkU0xneEN4YV9EUlUtVzhBVDNxSFBOUnNHZU12YVNzRW9MQV93OTJnMXJwRzFnV2hSWWFv?oc=5",
    "summary": "",
    "source": "FOX 10 Phoenix",
-   "feed": "gn-chandler",
+   "feed": "gn-phoenix",
    "group": "News search",
    "cities": [
-    "Chandler"
+    "Phoenix"
    ],
    "breaking": false,
    "cat": "Community",
@@ -3389,6 +3824,22 @@
    "cat": "Community",
    "published": "2026-11-25T17:43:23+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "2290a8ca893d7f70",
+   "title": "Oklahoma State Makes Major Eric Morris Decision: Report",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbG1WTExiWlcwSTJDVmotbnllcVJzUkZYQlJGdkRDXzhZcGstUVJuN0tLQ3ZnNm5kdW5XOF9HbENFT2xWUUhHeENMOC15YmMwRk05N2J1OWxnSW5md3NabUNpMjBCVVctam5OQmp6U1BLelB4NmpCWlZ4RGdkMzVUelE4YnJEa00?oc=5",
+   "summary": "",
+   "source": "Heavy.com",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T17:43:21+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "048d0192adad3f2d",
@@ -3551,6 +4002,22 @@
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
   },
   {
+   "id": "945f4f8d42e2b6b5",
+   "title": "Starters, key matchups and a prediction for Arizona vs. Arizona State",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMElHZnJYMTFhUTkwZ0kwLVVIVzgwdHhVSHBkTmszZlg1OGRRQUl6OUZsWXlpSVNkd21kUWRfOF8yTXA0Z3VVRFBSVHV3Y2ZFb1JEWUwyeWlBdnJFNTVqODdMcFZzNXFmWUhZcW5Pd01NOHZROXk4dFBkMnl1Ukdjc0FTWEZEUlBoWmJBUDQ1N2pDVWlpbTRuUjhlOUVFd0N5aGN3?oc=5",
+   "summary": "",
+   "source": "Arizona Daily Star",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T17:04:07+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "0b4f8ee025782ec7",
    "title": "MLS NEXT Fest 2026 to feature over 1,800 teams from 300 clubs in Arizona",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYy15TDNtdDBtamdBRlJwOTRBM3BUT2Q2Q2VndEQ4MWYwZFYwdi1BZ3poWkM2bDcySkQzSWlHcnJHTTY2VVFoZ3R6XzRlSjhpWkZ3RnpUc0ZZME9YSlhwWHBwUGVrbENNZTRCdm9mVUNpTG9sS3VHTkxaRmZrWmhZSXF6S05XUm5Sd0N3QU8ySVVWWVJUWXJPc2VPVmJXY2U5TEcxaWFUMA?oc=5",
@@ -3567,22 +4034,6 @@
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
   },
   {
-   "id": "7609d11d75f257c5",
-   "title": "Elite Bags Expands into the United States, Bringing European Expertise Closer to American Professionals",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObFN4MDdqU2RUeTBLV2xOTlpuYy1rYndyNjNNZC1HUVhLOXdOQVdjbmQ1RFlJOWtST1FpbFhmNllRQkxEV2JzblNrWF9oM0dVNDVQM05FV2dlMXpYbW1UV2VnTnRNNmROdENtU01fend0STNja1ktTzNQZ3hNTUhNU3ppWlkwMHpXY29jUjNhQktIQmM2NVN3ZldieXE1djNWRWNxdUgydnhWQ2tVVkF5eklzLTZTWmNmdmQwVmhZQzhlUS1TQVM2U09tSVk1Q1BYWDloR1EybUU1N0tCenFrS3h3RQ?oc=5",
-   "summary": "",
-   "source": "EIN Presswire",
-   "feed": "gn-chandler",
-   "group": "News search",
-   "cities": [
-    "Chandler"
-   ],
-   "breaking": false,
-   "cat": "Community",
-   "published": "2026-11-25T17:00:00+00:00",
-   "first_seen": "2026-11-25T23:33:49.250132+00:00"
-  },
-  {
    "id": "859d38818ac21c7c",
    "title": "Razzle Dazzle Dancers celebrate America",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcXMwbmRCcnJCSTVHTXZPYTZqc2FWbVVBbFBtMzdZOWhDSE5NRlowajVNVlVQOXFkZjRCOElRZzFhSHJpVDZ5a2FJdHBUTHk3Y0hDMGt0NzNEb1hQUlNzWmNqWnRYNC1Kd1l4dXVjZEFzencwM3ZLc04xWkFlNzZBbDZoYjNNOGpYbExPdkxiY0R2dU9fTUprWTA1MGVrc2szU1FyVw?oc=5",
@@ -3592,6 +4043,22 @@
    "group": "News search",
    "cities": [
     "Sun City"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T17:00:00+00:00",
+   "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "7609d11d75f257c5",
+   "title": "Elite Bags Expands into the United States, Bringing European Expertise Closer to American Professionals",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObFN4MDdqU2RUeTBLV2xOTlpuYy1rYndyNjNNZC1HUVhLOXdOQVdjbmQ1RFlJOWtST1FpbFhmNllRQkxEV2JzblNrWF9oM0dVNDVQM05FV2dlMXpYbW1UV2VnTnRNNmROdENtU01fend0STNja1ktTzNQZ3hNTUhNU3ppWlkwMHpXY29jUjNhQktIQmM2NVN3ZldieXE1djNWRWNxdUgydnhWQ2tVVkF5eklzLTZTWmNmdmQwVmhZQzhlUS1TQVM2U09tSVk1Q1BYWDloR1EybUU1N0tCenFrS3h3RQ?oc=5",
+   "summary": "",
+   "source": "EIN Presswire",
+   "feed": "gn-chandler",
+   "group": "News search",
+   "cities": [
+    "Chandler"
    ],
    "breaking": false,
    "cat": "Community",
@@ -3613,6 +4080,22 @@
    "cat": "Community",
    "published": "2026-11-25T16:58:00+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "d668b28e2dd7e660",
+   "title": "Phoenix Children's� Named Grand Marshal for 39th Annual APS Electric Light Parade",
+   "link": "https://www.phoenix.gov/newsroom/parks-news/phoenix-children-s--named-grand-marshal-for-39th-annual-aps-elec.html",
+   "summary": "Phoenix Children's� will serve as grand marshal for the 39th Annual APS Electric Light Parade, which takes place at 7 p.m. Saturday, Dec. 5, in Phoenix.",
+   "source": "City of Phoenix Newsroom",
+   "feed": "phx-gov",
+   "group": "Official",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T16:48:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "b0e5043dd3fd9f56",
@@ -3759,6 +4242,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "5a28aabbbedd3168",
+   "title": "Happy Thanksgiving, Fountain Hills",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONjNpZ3VWZnFnYXhmV1lpQjR1VUNGWVlRLVUySy1MVnJlYW1mMmhRb1RyLThBdWZNUjFqdkRFSGpGVU80MERpWUFaQ0ZyMXh1X1ZTSEFkaDduWU1zbVhyQmtvQ2JMTmVlbTFfbTVHV0xIbUhtdVZlUHpuT0QyNE9XNw?oc=5",
+   "summary": "",
+   "source": "www.yourvalley.net",
+   "feed": "gn-fountain-hills",
+   "group": "News search",
+   "cities": [
+    "Fountain Hills"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T16:06:19+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "d20d19f2885f9cb4",
    "title": "Warnock Mackinlay Law, a Mesa Injury Lawyer, Expands Focus on Compensation in Product Liability, Rideshare, and Motorcycle Accident Cases Across Glendale and Tempe",
    "link": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOalJBRUhOaHp2UjJuRnl0T3BabklURWpCSENVUnhKUlQtZ0pTU0htVnQ0YlpBQzNPMDhkUTlmTTNyZEg1VGtPc2tZbGRpQXptS1BWWmVnTUlmTGRJVmc5bk9CbW92LVprWUFTRlRNel92WFFCMWRuTHpSbUFQdWJyc245QW9ZYkZodTdxRnpwRlRURUNVdkxKTUxndnQxZ2pWR29rQXlwaWgtZm5kSWN5TjZERmJuMFZpbG9PTzlFRmZHRi1DRzNNdGNpWk5hYmhsLVRvMnVBSmNqQlowYmFMcmVEMjM3cnEtaGlCMXpNNnB2Z3NJcUhjMTRfd0pUakV5eGwtajQxNzQxbXh1RG4tYjVrR0ZNY2pyZ1JaTnNYTjl2RHdRVk1YWVdYLVA3WF9zcUJzRHE5T29tcE93elQ0?oc=5",
@@ -3852,7 +4351,9 @@
    "group": "News search",
    "cities": [
     "Chandler",
-    "Queen Creek"
+    "Tempe",
+    "Queen Creek",
+    "Fountain Hills"
    ],
    "breaking": false,
    "cat": "Community",
@@ -3860,9 +4361,9 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
-   "id": "f7fd3e0f4dce6d1f",
+   "id": "798eda2bf9f358a2",
    "title": "Newest park open in Fountain Hills",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9PSHpTQXcwWm5FLVVBY3hvU0R1SERZakM4TVZqNFNERVdIWVJic2JhUVJ3Y0E4ZHFxNEo4RmpyU20wb21PR1M3emlaT3QxbjVsajh6M2tMeEdQTU1DdU9LSTVYQ2J0ak5UVWJxUXNncjRiV0pYWTJlc0c2SG8?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0tUkNYdVBJSDJwZ0NWdTFlQ2Qtd1NCVHNOTGtaT0gyVU0zamxzS0F5NG5pbUVhajJYVk1tY2NoWVRjSEZ6SVJJcEowOXhIcFp4YXJ2T2pqT0JTVzhCRC16Y1Z2WGcyNTI5aVIwUnhueTNoSTB2VXNoRA?oc=5",
    "summary": "",
    "source": "Fountain Hills Times Independent",
    "feed": "gn-fountain-hills",
@@ -3873,7 +4374,7 @@
    "breaking": false,
    "cat": "Community",
    "published": "2026-11-25T16:00:00+00:00",
-   "first_seen": "2026-11-25T23:33:49.250132+00:00"
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "d23622912fcd0762",
@@ -4244,12 +4745,28 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "0092e986029c708f",
+   "title": "Maple & Ash Debuts First Lunch Service With Holiday Pop-Up",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVWNpTms5SkRVcXR2NnBwSGdXeEdWYlVkYUllc05lN01icWZFeFVqZ0VQSlhIMlU1VmlwZ1ZnenRZVGlLZjd5TmhmR0F1aUtCUzhhT0szcGV4Y0ZGT081bGF1N3dPaWh6RnB1Q2oxSXBaenVOM2E3N0lKMl9TY2xDYWlRZVlaVnBiZFlMMnlTMVpJZzRVTVdMNlpjQW0?oc=5",
+   "summary": "",
+   "source": "Fabulous Arizona",
+   "feed": "gn-scottsdale",
+   "group": "News search",
+   "cities": [
+    "Scottsdale"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T14:40:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "037dede88873242c",
    "title": "Chandler Budget Survey Invites Residents to Share Priorities",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWDhoNEc5and4TG9aLTJhODQ1R3duTmdNOGVEREdsUUt0NFpoN2piY2EyWkZlOUJiSU1UcXNjV05peUVBMWx6YWp1azZyc2RuRWFlYndRT1FHc1I5c3dQZlNyUW1iTGlZWFJLZ0VBQ3Y5Z3UtTlF6M0JETzVSY2xxdUtXbVNPVHFwc3RmWmw3Rk9Vb3hpN191Yld0bjE?oc=5",
    "summary": "",
    "source": "Signals AZ",
-   "feed": "gn-chandler",
+   "feed": "gn-fountain-hills",
    "group": "News search",
    "cities": [
     "Chandler"
@@ -4434,6 +4951,22 @@
    "cat": "Community",
    "published": "2026-11-25T13:21:53+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "2ef3e6d40765af4b",
+   "title": "Molly Miller continues delivering fiery pre-game speeches to Arizona State",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRExsRXVkMzg2QVRYUDJnNTVKOWd1MUh4WjlhSVRZaFZ4Rk1XS0dDNTVuaHMtTE9oV3BXbXBreDM3dG5ZTUY2dzFIRE8wWFZka3h5VFpzajYyR3NISGFwTXBGclQ5YVd3WXIybmdLRXpvd2ZhcWEzdk56X2N6NkNsU0JMdWxxX3FnSF9lQWU4STJtS2ZzQ0xHMnV1TjBjQnJRRWFlNFJvNFk5S2dsZzZnS1RsVHo?oc=5",
+   "summary": "",
+   "source": "Yahoo Sports",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-25T13:18:02+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "663647d545835e7e",
@@ -4692,6 +5225,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "b96e881c20a908e9",
+   "title": "Which freeways will be closed Thanksgiving weekend in metro Phoenix?",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdDY5UGxEeXJ4QzZpMlRkWVk2MkpiYXh0UXUtd1pPTTU0bXFIdm5RMUFXeWtZcl92NS1iRnRQTFVWRHdoZFMxUnE2anpoeS11bEJoM3o1eEk1VUlSbjhaMk5nZE0wNzM5cUJLTGVUUTd0NFY4VUZVLVFUWTdiNXBTelRJeFJCNmlyWVpSV21OZFBPZnowVXh4SkNOdDF1OUtralVsVTNOLWJYdUhjQ1daS21MeTVmYzFWTkl4ck13?oc=5",
+   "summary": "",
+   "source": "azcentral.com and The Arizona Republic",
+   "feed": "gn-fountain-hills",
+   "group": "News search",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": true,
+   "cat": "Roads & Weather",
+   "published": "2026-11-25T12:02:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "fe8a94b6b120a4a9",
    "title": "Arizona shelters are packed. Are more cats or dogs in need of homes?",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObXVNVXk3cjFoUUtYZTc1LTlqMjFtdTVWMi1oV210NGh4WDBoeTY2UnluTEJWZDVNaTRFaWNEdDVOcTdfQ2tnRzNNYURhWkFobU8yR3FPYm5STHRSZDgxLVNZQVNURS14Z01xSk15VWdkcFluZFpERHFLc3R1TVlMa3pCVDdmUkxkVThseXpiOW1fSjJMd1FuMUhyYkllNEFn?oc=5",
@@ -4738,6 +5287,22 @@
    "cat": "Sports",
    "published": "2026-11-25T12:00:00+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "a6b0e05186c4c6c9",
+   "title": "Eric Morris 'happy' with Oklahoma State football's 2027 recruiting class ahead of NSD",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWksyb2hwZWJOMF9HLVBBSzV1OVJoRFhwd1F6ZnJuYndVYnZ1RzRXRUF0NjA1am5ZYlJDYko3dWtjUU1WZFBsa2hUNnlpLTdKdzVXNVpqNlgyNmp5WHRmVlhPam5MenFWZmVyaERoRm5GMmhtUHoyZmtfMUp2c1c2LWNtbGxJdU0xbWdjd3B0VGFQaDlDV0ZvMGlnbjRaSE0?oc=5",
+   "summary": "",
+   "source": "Yahoo Sports",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-25T11:46:01+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "6d14388b954dfea3",
@@ -4852,6 +5417,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "59fca4ad594f9777",
+   "title": "ESPN projects Nebraska to face Scott Frost and UCF in Cactus Bowl",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcms3SXBYbVVYdWhNQzRMTGVlUTY3OVF1VF9xaVlRakhWb3loSDVJYm1YcFQ4QVRUaGI1LUtvLVdEa3hMSTd2SE9PRncwSTc0dk5ieGxycU5IUjFlWTA0aXMyQVl0ZjBEQ0g4VzNFdE5za01mZUFqdFVGQWlBTVhNYnl2X2xVOHlYdldzWEcwNnNlS2k4Q01vYzNObEY0djVa?oc=5",
+   "summary": "",
+   "source": "Yahoo Sports",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-25T10:16:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "a117ee5949eb2e66",
    "title": "Kdynce Parks' Stat Leader Rankings",
    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdXh3T2RBelJXUzd4RF9MY0VIejRqaEVpVmQ4NGlnT2ZrY25FNl9wOGhZb1BydUNoMkN3eXhMVkN2b0REel9iMnoyQ0Z2VXpSSUpxNUdySTBoSVFmUGtkRTNndUxTWEx2R1dwbmdKbGtDSXNPbkhxN3lKUjYwTml1eWlnY3JQLVJyUEstTExUM0tvU052cU5NWnk1WE5tei13dnhzSnljcDl4aWU2Sm14QUxJMFdVTmVpeDVGTUtlRXZNOVZfMENjeE14WlFpZ3J2SzA2YlpPS1lhZzVjaHZn?oc=5",
@@ -4900,6 +5481,38 @@
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
   },
   {
+   "id": "ebdfffec23bffbd7",
+   "title": "Arizona Sec. of St. Fontes:Democrats have chance to revamp election laws",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZXdLaHpVN00wRE5CbWRSLTM4dEY1S2lvTmhFYmkza3QwWGh6b2NZbzdOSGVjSDJFVFNmNV93ZTJ6VnlGNldXZnFGT3NQMVAyR0hxazZaMkM3ZjBjN21yVmJtOG1vN2tUWE5JZUVxSmhsekNtT0JlRDl2Sm1XWk5kcmp6RURaa3haWXlrb1dDQlVFV3c1QVBDOXRScUd6NkJha1BKYlpWeTBtLTBsT0J3clFXOW1zNE9w?oc=5",
+   "summary": "",
+   "source": "www.kawc.org",
+   "feed": "gn-fountain-hills",
+   "group": "News search",
+   "cities": [
+    "Fountain Hills"
+   ],
+   "breaking": false,
+   "cat": "Government",
+   "published": "2026-11-25T09:05:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "807393a83c6ec990",
+   "title": "Washington Boys Freshman Basketball @ Coronado",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdFZTUHpWamJvdmRFbTJOdGlJd09PQkJlbGNETWVQOC1NY1lVQ1JLdjh3VG5jeUJfa1RhUXhSVUliM2dsWVRYVmQ3VHdZQVdxbjJiZEQ3RHJPcjFaeUtoZW43SjQ1bmRPSVh4aEVHUF8yeW8zX1piQUhJWnRVbzBmR0lUdlZFdXNqd3dyNFpYQnUxak8tMmhTbk10Z21iSHUxcFFmREVtamFnRW5TeFpObkNkSmtpMFFVbUlyY3VYeEhYOVVqQjQtUzNfMkplOFZZTTFoVVNOWDhJQ0lT?oc=5",
+   "summary": "",
+   "source": "MaxPreps",
+   "feed": "gn-scottsdale",
+   "group": "News search",
+   "cities": [
+    "Scottsdale"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-25T09:03:29+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "896eb2a5aa76ad0a",
    "title": "11000 N 77th Pl Unit 2050, Scottsdale, AZ 85260",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPd2FsS3J1MTRaMjV4WEU0c2o3TVh5UUNKZXFKNVdwbkJxSHNjMEVQTXIxZzBWNzk1Q2tpNE9OMFdLWlJSQlBMYWdVQXNxSHdPeGlVbGdsN2FORmIwUnoxWjloa2FCa3RPcm9zUjVTZXhvOEpwYUhUd0RZWG5lWHE4eWUzQXh6U2FNYlBGemtCUFljSFZfSGhZTk4xVW1FY2s?oc=5",
@@ -4914,6 +5527,22 @@
    "cat": "Community",
    "published": "2026-11-25T09:01:49+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "b5e456e055b0995c",
+   "title": "120 E Rio Salado Pkwy Unit 505, Tempe, AZ 85281",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZHVfRmRCTWJXbk1mMzJJNXBHRkVibVRFNFdQS2xuUmNmSGNNbExVRDFsa0dPaVY5d0k2R2QwaEg2bm5xeG9ZOEhOLS1uNkVucUwtOHc2UU1IS0pVWm1aeDV3WEtPbThIWEdRdXVSd3Jfc21PZnlYTTE4MU14Z1BwVW5fUnpkVGc2dmR2SGNQVnVhZDhCa3ZMM25xUnJ3S3M?oc=5",
+   "summary": "",
+   "source": "Realtor.com",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T09:01:49+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "f1c95f34fecbd8db",
@@ -5010,6 +5639,38 @@
    "cat": "Community",
    "published": "2026-11-25T08:22:39+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "4869bc19bc8e98a1",
+   "title": "Faith Kishpaugh's Heritage Academy Gateway Career Home",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQckd6dEpXcDR3LUlZZWZWUmVGZkNUV1BqWmhidGV4WmhKR1ZIdWZoUGZFUDdud1ZRNG5FeTFTMVB5ZjBXTkpHNWE2LXU0c284d2dSb2VBZkpPeGQxSl9zU1Z3bTRRbk9IX1BBcnVmM044REYxdEJtRlhVUkhwbzFHYmZlTDY5NjU5d1VTMllYRlFiN3k5b3RlbUs0T1NReXRQNUNJMXRvSkd0aEtBS25nRGVIcENxUWpjdFNxdA?oc=5",
+   "summary": "",
+   "source": "MaxPreps",
+   "feed": "gn-queen-creek",
+   "group": "News search",
+   "cities": [
+    "Queen Creek"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-25T08:00:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "2dce00d85f4ab750",
+   "title": "The latest issue of the Fountain Hills Times Independent",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcDJkaFZOSHBIbE9lZEE0YmFQUloxUmY1R3hYS1VhWG53ZmtMUllGLWNheVdtTGF3X3FySEw1bzZRRDJTQzFsallEZ1RtaW12TmJaV3J4bDVIUng0bV9WQlpNOGI5R1FUcFJQeVp6UUw3eGg0VkJMM2hLamc1SW5yLW1Uc2o1YmZJM0ZadEFfWndMeTFHc0E?oc=5",
+   "summary": "",
+   "source": "Fountain Hills Times Independent",
+   "feed": "gn-fountain-hills",
+   "group": "News search",
+   "cities": [
+    "Fountain Hills"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T08:00:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "2c6a2160efd50a95",
@@ -5335,6 +5996,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "24b3becc7a7dcb62",
+   "title": "Video shows kittens left without warning at Tempe pet rescue",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN19TZ09sQUdISHRkNVgtSS1pUU5HRXpBb3ZERG8wclB5VnN1QUE5NEZPNDhzQl9mbWhIQ01TUm5kMU1GZWtyaDZoMURFU3hEdDFVNWFlVTdITmxvRlNuRV9LVXJ0X2R2dkR5QUs4Mjg2SmJFbzFvV0cxYkU5dG8yUml1MEYzTi0wMTdUZ0tkOEJOZ0tlbi1HZmo0c2VMTXp2YlczUElZVHdPUG9PMmYzczl6WTBGZw?oc=5",
+   "summary": "",
+   "source": "AZ Family",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": true,
+   "cat": "Crime & Safety",
+   "published": "2026-11-25T03:57:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "313aab6d8701ebf9",
    "title": "These Thanksgiving turkey mistakes could make your guests sick",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZXNfZjNIM19hRnZhQ2tDWThJNmNlRU96V3VWaTZHOHJJY05LQ1l0c1VscFkyUUU1Z2NIM2RFWjAweUlHLUZpYnVxQ21vem9aTzNwRXhVVm9ZblUxX19BQTJrRWEzb3BieTFETDFlRVh3UWpQcG8zd05hVmp5QTRnTHNyU1czaVJqczF4a01xcTg1SUJyOVI0b1dTUVUwbnlDUnFfbUwzMlQxb19RdTJR?oc=5",
@@ -5543,6 +6220,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "c61526efca212c53",
+   "title": "Things To Do Around the Valley Thanksgiving Week (November 24-29)",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT0tXNm84UC0zQ0xZUzY4Q2ZOZXpHQlZ4T1FPbVpaV0hrdVFuU3QyRXZ6bHNpdEJyb3YwYjg2OHYtTmxJSzRVZHktZnFtWlhXRTRtLVZ2QlRoOU8wVVpjRVh4cDlzUkc1eWF4cVNyemNMNlRuNW5ZbUs5NkVvVWljVXNZRklzT3hpSFVhOG14b2VTVkt1clprZU1tSmNOVjJjTkpzXw?oc=5",
+   "summary": "",
+   "source": "phoenixmag.com",
+   "feed": "gn-scottsdale",
+   "group": "News search",
+   "cities": [
+    "Scottsdale"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T02:28:19+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "396327938377f46e",
    "title": "Commanders Get Brandon Aiyuk’s First Visit. Monday Night Changed What Awaits Him",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNY3Q5cVBab3hNWENOMHc3U0p1b08wbUN4UU8zdW4tTzVXRTQ0V29sWE5hN2lQb0Qtb1pjRUIxcWQ5QlJ2blhJbWhRdW9ScE1XeGRrekJnWlpzVjRSbmp1dFRvY0Zia0IzRHltVFR5NVJJRGNTZmlOUVd3cGFlcE8wSA?oc=5",
@@ -5687,6 +6380,22 @@
    "first_seen": "2026-11-26T13:39:29.887397+00:00"
   },
   {
+   "id": "1a63f10d532c9f03",
+   "title": "BOOP! The Betty Boop Musical Tempe tickets on sale",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcXlPRHQ5X0NJX3BJYXFTYXRRX09HUWlCanUxUkdUVTdjRnBaZGZJWWNuMVFLaXdTQmVsZ1gwUnZGa3JIZWotV0ZENndUYTN2a0h5SG1uS09IakFsR25RTWtDdkZpYnZZUmtoNnZRRVFpLVoyVHVndUNsRE9OU0Exc19LdXdNYVB1eThvY1hB?oc=5",
+   "summary": "",
+   "source": "TicketNews",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T00:56:39+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "f9749c360f576bcc",
    "title": "Packers CB makes future Hall of Fame comparison for Rams QB Matthew Stafford",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA0UWpxc25UR0VyalZnZDFuMzJHbmdmNWNwRWEwX2Vfbm0wd3dhcmg3Yi1mTDJlRk10Sk94N0hzdkR1ak5RUFQxYXJwS1RXLUpmQ1dIZVgxcUlOMTh3MzhyUy1DMmt5WVlOM3VtNmFwQmFVM3p2VVNSSjByaFM?oc=5",
@@ -5799,9 +6508,9 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
-   "id": "fba290dec2d82746",
+   "id": "d21343b65b3957f7",
    "title": "120-seat performing arts center proposed in Gilbert",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWFQtaXlCdHJJVnBOMVZjXy1hTE1xcVlFWkJjaDF6NHpaUU9vQWVCel9RS2NJN3RWV0hUM3J3ZTI3NFNDY3Qxd0g1R1loYm9Xbm9qdU9FSlBiMmVpRmEzTDRFV240QVhlaXJhRFhubnlfNnRDNkZNZmVWdlNWME9xNFM2WHJ4MUluc3lSRklBVW1GRXpqUTNkY0p5RW1ZMS1sbjQ4STZyeVRHa2NDbWdlaFI3WWk1bmQw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZlB1VkJiVHhQRkQySTB0S0RDeVZmbFNTN3NHQ2JVdkJQekNJdUhoYXpLbC1uNDJNYS1OWEx4eTd6aE1UeVNSSFUwdS1DMnVhd0VmYTZmQ25RYmMxSTBrRjBwRmZlX0RwdGowV2xnYk10dW00TVI5NzBadkRZV1d6U1RVR1l5YW51NWw1M0lvdEFtaUhRTkdwOWd6aWxqWHFLWDV4VEVfemJuMXZfZnpr?oc=5",
    "summary": "",
    "source": "ABC15 Arizona",
    "feed": "gn-gilbert",
@@ -5812,7 +6521,7 @@
    "breaking": false,
    "cat": "Community",
    "published": "2026-11-25T00:15:16+00:00",
-   "first_seen": "2026-11-26T20:53:26.584938+00:00"
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "ff34fff256381740",
@@ -5911,6 +6620,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "c452e717d61e7b08",
+   "title": "Deion Sanders responds to Colorado future speculation with blunt message",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOeHVMMXE4TjJodTdSaDA1TGVzSzRyYm4tVEgta2cwRkJNZC04U3BETlQ5Wk1RaW1nUTB0UGVGN3l5OWhBdzl3aTNtZmZ6ekZDVDBjRnREVk9TOHZzOWphRlp4LXhjZXRjVExEanREeXplcUV3WWdqc2EzSzJMNzJVYmxBRzNzdmtudUE?oc=5",
+   "summary": "",
+   "source": "AOL.com",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T00:00:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "0aa064ef3f1e9ad6",
    "title": "Cardinals Can Become First Team Mathematically Eliminated From NFL Playoffs",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVk5aMXd3VWYycU42UjhrdTViMkZPdzloS1BmRXRsOWY3RDFuTloxWDVnX1dSRi16R09RWllkWmdOeUVMeEZld1IwX0xnNTZITlRMbnlqaTZaaWFyNm8zRUxnRm5ROVZ2VWFMQjF0QmlWV1dxUUQ1dThLUjBaUkhPYlNENXBVUkwwTXFqSUFpWUdmaUstMVA1MkdwSTBaT1h6?oc=5",
@@ -5989,6 +6714,22 @@
    "cat": "Sports",
    "published": "2026-11-24T23:40:39+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "4f4c2fd1ea7c78f4",
+   "title": "Primary Care is Getting a Makeover in Tempe. And it’s About Time.",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQUhpSTZVWEU1V09hdlVVUUltdUhxa2RWNDhOendzWS1YSGxYTkxlYzlkZ1RXY0M2MDF4b0Q3QlR3eDJrUmVTMGJ2Y3NSbTZsUUtIRWM1SlBxZzRaekZTM3NnamRhdXlSRUNXOVA5b3BjS2wzUWZzME1tWVcxZWNoYnZGY3lfQkM5OG5KYm5PQlE0cnBGTHhmbzdpY2hnbjBhYUdmeWhuQ0piUXZvbjZwcXdmRDdpbWFkYnl3OHFkWQ?oc=5",
+   "summary": "",
+   "source": "www.yourvalley.net",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-24T23:39:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "41538e93dc3b3e30",
@@ -6103,6 +6844,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "303793aa80d908e6",
+   "title": "In-N-Out busiest location — Arizona Beats California with 1.85M Visitors",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSWJzMjJvNERKU2VBTW5nVFZ6QTFWcVFzRV9KRFJCMEVENTZ6UHZiTUE1QzUydl95UlVrMkZLVjVCVWxWN3dSZkVwcEVtNlhaUGVGeV85UG5GajFLQ1ZUdFJCWVRYX3h2bjQ0b0JHUDFhaW1jRmpKb0JHMDd1d0ZQUFZnRQ?oc=5",
+   "summary": "",
+   "source": "The Korea Daily",
+   "feed": "gn-tempe",
+   "group": "News search",
+   "cities": [
+    "Tempe"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-24T23:14:54+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "15be2428bc43cec0",
    "title": "Are the Phoenix Suns finally figuring it out?",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb1hTRWxHZGpQZG53bEZQeEVCNVJfNXV5YW85bzNzNlRuSTlKb0NLX2F2aW1jclptTmdGVTRjakI4Sm80Qi1ZSVluRTRoZEhDb2xHN1pKY2N0dUUzbllaVVhmV2FhcEQ1VVhYaEpVa1E4czZKSkRmRnY0OElUYmhLeWRhbWFZN3M3VEFMRTg1aEJRaHVpYWpVMzhlV1k2ck1yenFTU3ViWk9HaGJQakxCc1U3WQ?oc=5",
@@ -6151,21 +6908,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
-   "id": "e4770ab4f8073f7b",
+   "id": "0510f6777c4746d2",
    "title": "Light Their Way: A Holiday Evening of Hope",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcUtLejA5Qzd6SjBhbGxHdS1LNGE2N3ZoeXQ4aEx4alFueUp3dnJKOHdEQmJ3N2UxWFFPaEpDSi05NUNsaG8tRUgyU0h4bzRXSUlERmFMNHBYdDFTRHc2YnVtY3RiUFdrblFJWnZVU29oZ25HRFl6UzdyaGR6RzhoaVlaQkxLRlJpUUpSeEtJZDNRMW42eHY0eGRERFYyY2ZGbWp3dWt6TkFCcVpzUGpfUw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbF8tTm9hYjNEa08yZWlCcGE4WnpJdENacG5lQ1hSZU9JcnZpNXhLZmZ2dmo5Y2ZjUnNIdXhWOE9YLW5ubm1QMXhoYjdPcVVoOUsyRmpkU1J3bG1DVmxERlBZdHVaRW53U0JEUWR4cTh6RXdKbzZNZUJodjM2bWo1QlVn?oc=5",
    "summary": "",
-   "source": "Paradise Valley Independent",
-   "feed": "gn-paradise-valley",
+   "source": "Fountain Hills Times Independent",
+   "feed": "gn-fountain-hills",
    "group": "News search",
    "cities": [
-    "Paradise Valley",
-    "Sun City"
+    "Fountain Hills",
+    "Sun City",
+    "Paradise Valley"
    ],
    "breaking": false,
    "cat": "Community",
    "published": "2026-11-24T23:11:23+00:00",
-   "first_seen": "2026-11-26T13:39:29.887397+00:00"
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "56c1e735a411fa9b",
@@ -6237,7 +6995,7 @@
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzWl9rcm85SU1VRWVOd1dmYzF1T2ZSTmsxakplRVlXU2VCZTBTTzhMenhxZFNnRUJyaGVHVUx3bGFpNldlYTlYdUdnOWREOF9lRWpFWHA0Snpwc296Z1VmSDRQSDBQT3FYSmdpajV1OGo?oc=5",
    "summary": "",
    "source": "MaxPreps",
-   "feed": "gn-paradise-valley",
+   "feed": "gn-phoenix",
    "group": "News search",
    "cities": [
     "Phoenix"
@@ -6261,22 +7019,6 @@
    "breaking": false,
    "cat": "Community",
    "published": "2026-11-24T22:36:45+00:00",
-   "first_seen": "2026-11-25T23:33:49.250132+00:00"
-  },
-  {
-   "id": "4b2f1d912dd3d34d",
-   "title": "Arizona Senate president-elect lays out Democrats' goals",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZHB4VXFDZVNjcVZnX1B5YllheXBzQ2ZxTEp4OV9UZUZBWGsyVnBuM1dBNVpzeWxwR21KRU5uOEdOWkpienllM2k4a2RVckJRN0JOSVdQOG5qQWRnM2wyTGhzT2Z0dkdIOEVPTFpjMUM1NG5YclJlNlFDaC1PZFNqZ0w1N3dTZw?oc=5",
-   "summary": "",
-   "source": "AOL.com",
-   "feed": "gn-fountain-hills",
-   "group": "News search",
-   "cities": [
-    "Fountain Hills"
-   ],
-   "breaking": false,
-   "cat": "Community",
-   "published": "2026-11-24T22:30:25+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
@@ -6344,11 +7086,27 @@
    "first_seen": "2026-11-26T20:53:26.584938+00:00"
   },
   {
-   "id": "c2e7f5344e85d026",
-   "title": "Dolphins Deep Dive: Top needs in the NFL draft for Miami | VIDEO",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOb0ZSOHdHNmp6dnVNak82QWFDWmRPTWJtamFqaU5HbzJGQzhLMHJMZ2w1NVlRZVdzVjZjcThkdTlCS0x4UkNOVm5jcmNDNlpQLVlMMmlYMmhDQUJ5cUU3b0RTUV9rQ1VsOWJPVUJjWFZZbDlXV285STg0WFJHaHZnVFNGbGF3a05tbDZ6dzBFclNIN2xCRWhHRGVISmxyMnBSRGJCVQ?oc=5",
+   "id": "53a8bf38b73412ee",
+   "title": "Arizona Senate president-elect lays out Democrats' goals",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPS2c2c0lMbDNHdml6ZWs0ODVUOGROMVVjRTFIYjRocUFoVmxzN3NyR1pzUTBxekpsdEgxLVUzU2M0RGtDcW84czN5WGJqaFpEOFF2cnp1VjF6ZkdDY3lyVG1qX1JBaXVjQkttZWhSYjF3TVk3SF93SlhXaWFrZWRsaDRPdDNUN2liY244eDNweVAwRjZvVnhOT9IBmAFBVV95cUxPS2c2c0lMbDNHdml6ZWs0ODVUOGROMVVjRTFIYjRocUFoVmxzN3NyR1pzUTBxekpsdEgxLVUzU2M0RGtDcW84czN5WGJqaFpEOFF2cnp1VjF6ZkdDY3lyVG1qX1JBaXVjQkttZWhSYjF3TVk3SF93SlhXaWFrZWRsaDRPdDNUN2liY244eDNweVAwRjZvVnhOTw?oc=5",
    "summary": "",
-   "source": "Sun Sentinel",
+   "source": "The Center Square",
+   "feed": "gn-fountain-hills",
+   "group": "News search",
+   "cities": [
+    "Fountain Hills"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-24T22:25:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "23ce7019af24c27e",
+   "title": "Dolphins Deep Dive: Top needs in the NFL draft for Miami | VIDEO",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQY190YlpKdV9qdS0wTk1TRUFfaFoxX0dxQU0wNDhvM0I5ZGRuM3kwTWJPQWRiS2I5SkM4Q2VRWXhsWGNEUEtDX0FUUjV5RDd1R1NVZ0ZwZ1BldGFQZVQ0bWd1QmR5SW55VkdIbGhCUC1qVmZOVmZPUVFvSC0zdkpwdV9OLVdLcUJjX1QxWUtBYUxJZk44aGFSem1QbnZVRWZpN3Q0S3pQc0U?oc=5",
+   "summary": "",
+   "source": "Orlando Sentinel",
    "feed": "gn-tempe",
    "group": "News search",
    "cities": [
@@ -6356,8 +7114,8 @@
    ],
    "breaking": false,
    "cat": "Sports",
-   "published": "2026-11-24T22:24:52+00:00",
-   "first_seen": "2026-11-25T23:33:49.250132+00:00"
+   "published": "2026-11-24T22:23:27+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "6a6f15c3f2e0dd44",
@@ -6519,6 +7277,22 @@
    "cat": "Community",
    "published": "2026-11-24T21:46:00+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "c52486d5234c8741",
+   "title": "American Fork XC boys punch ticket to Nationals",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPY0dISjFfNlB1OVBXa3ZyU0d0S3g1S0lEQTN5aTBoMDdpVjBYS3hmZWtqX1k0Q3dQZ3lVUVR5OVoteE9JbndJNnJfeDJjTFIwcFI0eERIT0g0MzR2eTg2d1NkbURJSFp1WEltOWw5UjliZWxTRy1GZG5vakxFZGpUN0ZnejFkc3lQ?oc=5",
+   "summary": "",
+   "source": "AF Citizen",
+   "feed": "gn-mesa",
+   "group": "News search",
+   "cities": [
+    "Mesa"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-24T21:45:20+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   },
   {
    "id": "2705ad8c06405c65",
@@ -8400,6 +9174,22 @@
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
   },
   {
+   "id": "d403a0aa87028c25",
+   "title": "City of Phoenix Thanksgiving Holiday Notice",
+   "link": "https://www.phoenix.gov/newsroom/city-manager-news/4034.html",
+   "summary": "On Thursday and Friday, November 26 and 27, 2026, the City of Phoenix observes the Thanksgiving holiday. Read this article to learn how City services are ...",
+   "source": "City of Phoenix Newsroom",
+   "feed": "phx-gov",
+   "group": "Official",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-24T08:00:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
    "id": "b11798444ec6645d",
    "title": "Videos - Coronado Dons (Scottsdale, AZ) Girls Basketball",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQa2JqSEhIc1ptQndUSnJIbTEtdDdVeU1QcVZQM2ktQ0YybnZWMkd3SUU0cEtTVVBYUnFxdEFXbzVzeGRaUDh0aTVhanotamJ1aGt6ekhVYS1qRk5wS1hIRUF4d1VjQkxvYXNpajhqS0kwTFJpRVJaNTR5eW9Jemc3R0xYZUhhcldGaDlzQWRtOE9yMlpINTJzRXpvQmRVYXJtTkdDd1RMSGUyaFpYRlJGazQxVWxhckVjZGxKRXhScGFrakFXTHBJ?oc=5",
@@ -9166,6 +9956,54 @@
    "cat": "Sports",
    "published": "2026-11-23T23:35:13+00:00",
    "first_seen": "2026-11-25T23:33:49.250132+00:00"
+  },
+  {
+   "id": "969533e683f443d4",
+   "title": "Phoenix Water Services Warns Residents About Misleading Property-Related Solicitations",
+   "link": "https://www.phoenix.gov/newsroom/water-services-news/phoenix-water-services-warns-residents-about-misleading-property.html",
+   "summary": "The City of Phoenix Water Services Department is advising residents to use caution when responding to unsolicited mailings or phone calls concerning...",
+   "source": "City of Phoenix Newsroom",
+   "feed": "phx-gov",
+   "group": "Official",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Government",
+   "published": "2026-11-23T23:31:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "1709cb600bdb85c2",
+   "title": "Official Election Results are Available",
+   "link": "https://www.phoenix.gov/newsroom/city-clerk-news/3287.html",
+   "summary": "",
+   "source": "City of Phoenix Newsroom",
+   "feed": "phx-gov",
+   "group": "Official",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Government",
+   "published": "2026-11-21T00:30:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
+  },
+  {
+   "id": "0ebe4871e3ea7ec7",
+   "title": "S'edav Va'aki Museum Hosts 49th Annual Indian Market",
+   "link": "https://www.phoenix.gov/newsroom/sedav-vaaki-museum-news/s-edav-va-aki-museum-hosts-49th-annual-indian-market.html",
+   "summary": "S'edav Va'aki Museum article discussing information regarding the upcoming 49th annual Indian Market. December 12 and December 13, 2026.",
+   "source": "City of Phoenix Newsroom",
+   "feed": "phx-gov",
+   "group": "Official",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-20T19:00:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00"
   }
  ]
 }
