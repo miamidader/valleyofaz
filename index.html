@@ -75,6 +75,15 @@ h2{font-family:var(--display);font-weight:400;font-size:15px;text-transform:uppe
 .act{background:none;border:0;padding:4px 0;color:var(--accent);font:inherit;font-size:14px;cursor:pointer;text-decoration:none}
 .more{display:block;width:100%;margin-top:10px;padding:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--accent);font:inherit;font-size:14px;cursor:pointer}
 .day{font-size:12px;color:var(--muted);margin:14px 2px 6px;text-transform:uppercase;letter-spacing:.06em}
+.hist{background:var(--card);border:1px dashed var(--accent);border-radius:14px;padding:12px 14px;margin:16px 0 0}
+.hist h3{font-family:var(--display);font-weight:400;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.hist .h{display:flex;gap:12px;padding:7px 0}
+.hist .h+.h{border-top:1px solid var(--line)}
+.hist .y{flex:none;width:46px;font-family:var(--display);font-size:20px;line-height:1.1;color:var(--ink)}
+.hist .t{font-size:14px;min-width:0;overflow-wrap:anywhere}
+.hist .k{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.hist a{color:var(--accent);text-decoration:none;font-size:13px;white-space:nowrap}
+.hist .tog{background:none;border:0;color:var(--accent);font:inherit;font-size:13px;padding:6px 0 0;cursor:pointer}
 .empty{padding:28px 12px;text-align:center;color:var(--muted)}
 details.info{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13px}
 details.info summary{cursor:pointer;font-weight:600}
@@ -95,7 +104,7 @@ details.info p{color:var(--muted);margin:8px 0 0}
 </div>
 <script>
 (function(){
-var DATA=null,cat="All",city="All",sort="hot",open=null,restOpen=false,restLimit=40,newLimit=30;
+var HIST=null,histOpen=false,DATA=null,cat="All",city="All",sort="hot",open=null,restOpen=false,restLimit=40,newLimit=30;
 var CATS=["All","Crime & Safety","Roads & Weather","Government","Openings","Sports","Community"];
 var TOP=5,RISING=15;
 var $=function(i){return document.getElementById(i)};
@@ -141,6 +150,16 @@ function rowEl(i){
  var m=el("span","");m.style.cssText="min-width:0;flex:1";m.appendChild(el("span","ttl",i.title));m.appendChild(metaLine(i));r.appendChild(m);
  r.onclick=function(){open=open===i.id?null:i.id;render()};w.appendChild(r);
  if(open===i.id)w.appendChild(detail(i,s));return w}
+function histCard(){
+ var items=(HIST&&HIST.items)||[];if(!items.length||cat!=="All"||city!=="All")return null;
+ var c=el("section","hist");c.appendChild(el("h3","","On this day in the Valley \u00B7 "+HIST.label));
+ var show=histOpen?items:items.slice(0,2),kinds={event:"Event",birth:"Born",death:"Died"};
+ show.forEach(function(x){var r=el("div","h");r.appendChild(el("div","y",String(x.year||"")));
+  var t=el("div","t");t.appendChild(el("span","k",kinds[x.kind]||""));t.appendChild(document.createTextNode(x.text+" "));
+  if(x.url){var a=el("a","","Read more \u2197");a.href=safe(x.url);a.target="_blank";a.rel="noopener";t.appendChild(a)}
+  r.appendChild(t);c.appendChild(r)});
+ if(items.length>2){var b=el("button","tog",histOpen?"Show less":"Show "+(items.length-2)+" more");b.type="button";b.onclick=function(){histOpen=!histOpen;render()};c.appendChild(b)}
+ return c}
 function listEl(items){var l=el("div","list");items.forEach(function(i){l.appendChild(rowEl(i))});return l}
 function head(title,withSeg){var h=el("div","head");h.appendChild(el("h2","",title));
  if(withSeg){var sg=el("div","seg");[["hot","Hot"],["new","Newest"]].forEach(function(x){var b=el("button","",x[1]);b.type="button";b.setAttribute("aria-pressed",sort===x[0]);b.onclick=function(){sort=x[0];open=null;render()};sg.appendChild(b)});h.appendChild(sg)}
@@ -156,6 +175,7 @@ function render(){
  Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).forEach(function(c){
   cs.appendChild(chip(c,counts[c],city===c,function(){city=c;open=null;restOpen=false;restLimit=40;newLimit=30;render()},true))});
  var out=$("out");out.textContent="";
+ var hc=histCard();if(hc)out.appendChild(hc);
  var f=items.filter(function(i){return inCat(i)&&inCity(i)});
  if(!f.length){out.appendChild(el("div","empty","Nothing here yet. Try All cities."))}
  else if(sort==="hot"){
@@ -181,7 +201,10 @@ function render(){
  DATA.feeds.forEach(function(x){var r=el("div","s");r.appendChild(el("span","",x.name));r.appendChild(el("span",x.ok?"":"bad",x.ok?x.count+" items":"failed"));det.appendChild(r)});
  out.appendChild(det);
  $("stamp").textContent="updated "+ago(DATA.generated)}
+function loadHistory(){
+ return fetch("data/history.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(h){HIST=h;if(DATA)render()}).catch(function(){})}
 function load(manual){
+ loadHistory();
  var t=$("ptrtxt");if(manual)t.textContent="Refreshing…";
  return fetch("data/items.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
   DATA=d;render();if(manual)t.textContent="Up to date"}).catch(function(){

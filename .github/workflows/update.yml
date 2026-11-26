@@ -21,11 +21,14 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/fetch_feeds.py
+      - name: Fetch On this day history
+        run: python scripts/fetch_history.py
+        continue-on-error: true
       - name: Save feed
         run: |
           git config user.name "feed-bot"
           git config user.email "feed-bot@users.noreply.github.com"
-          git add data/items.json
+          git add data/items.json data/history.json
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Update feed"
           git pull --rebase origin main
