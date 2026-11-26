@@ -167,6 +167,107 @@ def norm_title(title):
     return re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
 
 
+STOP = set("a an the of in on at to for and or but with as by from is are was were be been after before over into near amid says say said new via vs his her its their who what how why".split())
+LOCAL_OUTLETS = ["abc15", "azfamily", "az family", "12news", "fox 10", "ktar", "azcentral", "arizona republic", "phoenix new times", "axios", "kjzz", "cbs news 5", "kpnx", "kpho", "city of ", "police", "fire department"]
+CAT_WEIGHT = {"Crime & Safety": 14, "Roads & Weather": 10, "Government": 8, "Community": 6, "Sports": 4}
+HIGH_WORDS = ["shot", "shooting", "killed", "dead", "death", "homicide", "murder", "explosion", "standoff", "evacuat", "missing", "amber alert", "stabbing", "wildfire", "drowning", "crash", "chase", "barricade"]
+HOOK_WORDS = ["video", "caught on camera", "viral", "shocking", "surprising", "first", "record", "rare", "mystery", "discover", "rescued", "dog", "kids", "child", "baby", "massive", "huge", "closing", "closes", "opens", "opening", "free", "warning", "warns"]
+
+
+def tokens(title):
+    words = [w[:-1] if len(w) > 4 and w.endswith("s") else w for w in re.findall(r"[a-z0-9]+", title.lower())]
+    return {w for w in words if w not in STOP and len(w) > 2}
+
+
+def similar(a, b):
+    inter = len(a & b)
+    if inter < 3:
+        return False
+    return inter / len(a | b) >= 0.4 or inter / min(len(a), len(b)) >= 0.6
+
+
+def is_local(source):
+    low = source.lower()
+    return any(k in low for k in LOCAL_OUTLETS)
+
+
+def base_score(item):
+    """Everything except recency, which the page adds because it changes between runs."""
+    why = []
+    score = 0
+    outlets = {m["source"].lower() for m in item["members"]}
+    if len(outlets) > 1:
+        score += min((len(outlets) - 1) * 8, 40)
+        why.append(f"Covered by {len(outlets)} outlets")
+    score += CAT_WEIGHT.get(item["cat"], 6)
+    low = item["title"].lower()
+    if any(w in low for w in HIGH_WORDS):
+        score += 10
+        why.append("Urgent or high-stakes wording")
+    if any(w in low for w in HOOK_WORDS):
+        score += 6
+        why.append("Strong hook for a post")
+    if any(is_local(m["source"]) for m in item["members"]):
+        score += 6
+        why.append("Reported by a local outlet")
+    if item["cities"] and any(c.lower() in low for c in item["cities"]):
+        score += 5
+        why.append("City named in the headline")
+    return score, why
+
+
+def cluster_and_score(nodes):
+    """Merge items about the same story, count the outlets covering it, and score it."""
+    for n in nodes:
+        n.setdefault("members", [{"source": n.get("source", ""), "link": n["link"], "published": n["published"]}])
+    toks = [tokens(n["title"]) for n in nodes]
+    parent = list(range(len(nodes)))
+
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    seen_title = {}
+    for i, n in enumerate(nodes):
+        key = norm_title(n["title"])
+        if key in seen_title:
+            parent[find(i)] = find(seen_title[key])
+        else:
+            seen_title[key] = i
+    for i in range(len(nodes)):
+        for j in range(i + 1, len(nodes)):
+            if find(i) != find(j) and similar(toks[i], toks[j]):
+                parent[find(j)] = find(i)
+
+    groups = {}
+    for i, n in enumerate(nodes):
+        groups.setdefault(find(i), []).append(n)
+
+    out = []
+    for group in groups.values():
+        # Representative: a local outlet if one covered it, otherwise the earliest report.
+        group.sort(key=lambda n: n["published"])
+        rep = next((n for n in group if is_local(n["source"])), group[0])
+        members, cities = {}, []
+        for n in group:
+            for m in n["members"]:
+                members[m["link"]] = m
+            for c in n["cities"]:
+                if c not in cities:
+                    cities.append(c)
+        rep = dict(rep)
+        rep["members"] = sorted(members.values(), key=lambda m: m["published"])[:12]
+        rep["cities"] = cities
+        rep["latest"] = max(m["published"] for m in members.values())
+        rep["outlets"] = len({m["source"].lower() for m in members.values()})
+        rep["base"], rep["why"] = base_score(rep)
+        out.append(rep)
+    out.sort(key=lambda i: i["latest"], reverse=True)
+    return out
+
+
 def main():
     config = json.loads(FEEDS_PATH.read_text())
     matchers = build_city_matcher(config["cities"])
@@ -249,18 +350,7 @@ def main():
     for item in collected.values():
         item["cat"] = categorize(item["title"] + " " + item.get("summary", ""), item.get("source", ""))
 
-    # Drop near-duplicates (same headline from different feeds); keep the earliest published.
-    by_title = {}
-    for item in sorted(collected.values(), key=lambda i: i["published"]):
-        key = norm_title(item["title"])
-        if key not in by_title:
-            by_title[key] = item
-        else:
-            kept = by_title[key]
-            for c in item["cities"]:
-                if c not in kept["cities"]:
-                    kept["cities"].append(c)
-    items = sorted(by_title.values(), key=lambda i: i["published"], reverse=True)[:MAX_ITEMS]
+    items = cluster_and_score(list(collected.values()))[:MAX_ITEMS]
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps({

@@ -5,21 +5,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Valley Feed">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#1F3864">
 <title>Valley of AZ Feed</title>
 <style>
-:root{--bg:#f5f4f0;--card:#fff;--ink:#1a1d24;--muted:#667085;--line:#e4e2db;--accent:#1F3864;--accent-ink:#fff;--pick:#b45309;--bad:#c2410c}
-@media (prefers-color-scheme:dark){:root{--bg:#0f1218;--card:#181c25;--ink:#eceef3;--muted:#98a1b3;--line:#272c38;--accent:#8fb0ff;--accent-ink:#0f1218;--pick:#fbbf24;--bad:#fb923c;color-scheme:dark}}
+:root{--bg:#f5f4f0;--card:#fff;--ink:#1a1d24;--muted:#667085;--line:#e4e2db;--accent:#1F3864;--accent-ink:#fff;--hot:#d9380b;--rise:#c47f0a;--calm:#7a8699}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1218;--card:#181c25;--ink:#eceef3;--muted:#98a1b3;--line:#272c38;--accent:#8fb0ff;--accent-ink:#0f1218;--hot:#ff6a3d;--rise:#f2b233;--calm:#6c7890;color-scheme:dark}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 max(16px,env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 max(16px,env(safe-area-inset-right)) calc(48px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
 .wrap{max-width:720px;margin:0 auto}
-header{position:sticky;top:0;z-index:5;background:var(--bg);padding:calc(env(safe-area-inset-top) + 10px) 0 8px;border-bottom:1px solid var(--line)}
-.top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-h1{font-size:20px;margin:0;letter-spacing:-.01em}
+.title{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:calc(env(safe-area-inset-top) + 12px) 0 4px}
+h1{font-size:22px;margin:0;letter-spacing:-.01em}
 .stamp{font-size:12px;color:var(--muted);white-space:nowrap}
-.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:6px 0 8px;margin-top:2px;border-bottom:1px solid var(--line)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:3px 0;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
 .chip b{font-weight:600;color:var(--muted);margin-left:4px}
@@ -30,98 +29,146 @@ h1{font-size:20px;margin:0;letter-spacing:-.01em}
 button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 #ptr{height:0;overflow:hidden;text-align:center;font-size:13px;color:var(--muted);transition:height .15s}
 #ptr span{display:block;padding-top:10px}
-h2{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:18px 2px 6px;font-weight:600}
-h2.pick{color:var(--pick)}
+.head{display:flex;justify-content:space-between;align-items:center;margin:20px 2px 8px}
+h2{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:0;font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
+.seg button{border:0;background:none;color:var(--muted);font:inherit;font-size:13px;padding:5px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+/* top story cards */
+.cards{display:grid;gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card>button{display:flex;gap:12px;width:100%;text-align:left;background:none;border:0;color:inherit;font:inherit;padding:14px;cursor:pointer;align-items:flex-start}
+.ring{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;position:relative;background:conic-gradient(var(--c) calc(var(--s)*1%),var(--line) 0)}
+.ring::after{content:"";position:absolute;inset:5px;border-radius:50%;background:var(--card)}
+.ring span{position:relative;z-index:1;font-weight:700;font-size:16px;font-variant-numeric:tabular-nums}
+.body{min-width:0;flex:1}
+.kick{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c);margin-bottom:3px}
+.card .ttl{font-size:17px;font-weight:650;line-height:1.28;display:block;overflow-wrap:anywhere}
+.meta{font-size:12px;color:var(--muted);margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 10px}
+.meta .city{color:var(--accent);font-weight:600}
+/* compact rows */
 .list{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .item+.item{border-top:1px solid var(--line)}
 .row{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;background:none;border:0;color:inherit;font:inherit;padding:11px 12px;cursor:pointer}
-.city{flex:none;width:76px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--accent);padding-top:3px;overflow-wrap:anywhere}
-.main{min-width:0;flex:1}
-.ttl{font-weight:600;font-size:15px;display:block;overflow-wrap:anywhere}
-.sub{font-size:12px;color:var(--muted);margin-top:2px;display:block}
-.star{color:var(--pick);margin-right:4px}
-.detail{padding:0 12px 12px 98px}
-.detail p{margin:0 0 8px;font-size:14px;color:var(--muted)}
+.pill{flex:none;min-width:34px;text-align:center;font-weight:700;font-size:13px;padding:3px 0;border-radius:8px;color:var(--c);border:1.5px solid var(--c);font-variant-numeric:tabular-nums}
+.row .ttl{font-weight:600;font-size:15px;display:block;overflow-wrap:anywhere}
+.row .meta{margin-top:3px}
+/* expanded detail */
+.detail{padding:0 14px 14px;border-top:1px dashed var(--line)}
+.card .detail{padding-top:12px}
+.row-wrap .detail{padding:10px 12px 12px 56px}
+.detail p{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.why{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.why span{font-size:12px;border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+.also{font-size:13px;color:var(--muted);margin:0 0 10px}
+.also a{color:var(--accent);text-decoration:none;margin-right:8px;white-space:nowrap}
 .acts{display:flex;gap:16px;flex-wrap:wrap}
 .act{background:none;border:0;padding:4px 0;color:var(--accent);font:inherit;font-size:14px;cursor:pointer;text-decoration:none}
+.more{display:block;width:100%;margin-top:10px;padding:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--accent);font:inherit;font-size:14px;cursor:pointer}
+.day{font-size:12px;color:var(--muted);margin:14px 2px 6px;text-transform:uppercase;letter-spacing:.06em}
 .empty{padding:28px 12px;text-align:center;color:var(--muted)}
-details.src{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13px}
-details.src summary{cursor:pointer;font-weight:600}
+details.info{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13px}
+details.info summary{cursor:pointer;font-weight:600}
+details.info p{color:var(--muted);margin:8px 0 0}
 .s{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-top:1px solid var(--line)}
-.s:first-of-type{margin-top:8px}
-.bad{color:var(--bad)}
-@media (max-width:420px){.city{width:62px;font-size:10px}.detail{padding-left:84px}}
+.bad{color:var(--hot)}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header>
- <div class="top"><h1>Valley of AZ Feed</h1><span class="stamp" id="stamp">loading…</span></div>
- <div class="chips" id="cats" role="group" aria-label="Topic"></div>
- <div class="chips" id="cities" role="group" aria-label="City"></div>
-</header>
-<div id="ptr"><span id="ptrtxt">Pull to refresh</span></div>
-<main id="out"><div class="empty">Loading…</div></main>
+ <div class="title"><h1>Valley of AZ Feed</h1><span class="stamp" id="stamp">loading…</span></div>
+ <div class="bar">
+  <div class="chips" id="cats" role="group" aria-label="Topic"></div>
+  <div class="chips" id="cities" role="group" aria-label="City"></div>
+ </div>
+ <div id="ptr"><span id="ptrtxt">Pull to refresh</span></div>
+ <main id="out"><div class="empty">Loading…</div></main>
 </div>
 <script>
 (function(){
-var DATA=null,cat="All",city="All",open=null,LIMIT=30,more={};
+var DATA=null,cat="All",city="All",sort="hot",open=null,restOpen=false,restLimit=40,newLimit=30;
 var CATS=["All","Crime & Safety","Roads & Weather","Government","Sports","Community"];
+var TOP=5,RISING=15;
 var $=function(i){return document.getElementById(i)};
 function el(t,c,x){var n=document.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n}
 function safe(u){return /^https?:\/\//i.test(u)?u:"#"}
+function when(i){return new Date(i.latest||i.published).getTime()}
+function hrs(i){return Math.max(0,(Date.now()-when(i))/3600000)}
 function ago(iso){var s=Math.max(0,(Date.now()-new Date(iso).getTime())/1000);if(s<90)return"just now";if(s<3600)return Math.round(s/60)+" min ago";if(s<86400)return Math.round(s/3600)+" hr ago";return Math.round(s/86400)+" d ago"}
+function score(i){return Math.min(100,Math.round((i.base||0)+24*Math.exp(-hrs(i)/10)))}
+function tier(s){return s>=70?["HOT","var(--hot)"]:s>=50?["RISING","var(--rise)"]:["","var(--calm)"]}
 function label(i){return i.cities&&i.cities.length?i.cities[0]:"Valley"}
-function hours(i){return (Date.now()-new Date(i.published).getTime())/3600000}
 function chip(l,n,on,fn,sm){var b=el("button","chip"+(sm?" sm":""),l);b.type="button";if(n!=null)b.appendChild(el("b","",n));b.setAttribute("aria-pressed",on);b.onclick=fn;return b}
 function copy(s,btn){var o=btn.textContent;function ok(){btn.textContent="Copied";setTimeout(function(){btn.textContent=o},1200)}
  function fb(){var t=document.createElement("textarea");t.value=s;document.body.appendChild(t);t.select();try{document.execCommand("copy");ok()}catch(e){}document.body.removeChild(t)}
  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(ok,fb)}else fb()}
 function inCity(i){return city==="All"||(i.cities||[]).indexOf(city)>-1}
 function inCat(i){return cat==="All"||i.cat===cat}
-function itemEl(i,pick){
- var w=el("div","item"),r=el("button","row");r.type="button";r.setAttribute("aria-expanded",open===i.id);
- r.appendChild(el("span","city",label(i)));
- var m=el("span","main"),t=el("span","ttl");
- if(pick)t.appendChild(el("span","star","★"));
- t.appendChild(document.createTextNode(i.title));m.appendChild(t);
- m.appendChild(el("span","sub",i.source+" · "+ago(i.published)+" · "+i.cat));r.appendChild(m);
+function metaLine(i){
+ var m=el("div","meta");m.appendChild(el("span","city",label(i)));
+ var n=(i.outlets||1);m.appendChild(el("span","",i.source+(n>1?" +"+(n-1)+" more":"")));
+ m.appendChild(el("span","",ago(i.latest||i.published)));m.appendChild(el("span","",i.cat));return m}
+function detail(i,s){
+ var d=el("div","detail");
+ if(i.summary)d.appendChild(el("p","",i.summary));
+ var w=el("div","why"),why=(i.why||[]).slice();if(hrs(i)<6)why.push("Fresh");
+ why.forEach(function(x){w.appendChild(el("span","",x))});if(why.length){d.appendChild(w)}
+ var seen={};seen[(i.source||"").toLowerCase()]=1;var mem=(i.members||[]).filter(function(m){var k=m.source.toLowerCase();if(seen[k])return false;seen[k]=1;return true}).slice(0,6);
+ if(mem.length){var a=el("p","also","Also reported by ");mem.forEach(function(m){var l=el("a","",m.source);l.href=safe(m.link);l.target="_blank";l.rel="noopener";a.appendChild(l)});d.appendChild(a)}
+ var ac=el("div","acts"),o=el("a","act","Open story ↗");o.href=safe(i.link);o.target="_blank";o.rel="noopener";ac.appendChild(o);
+ [["Copy headline",i.title],["Copy link",i.link]].forEach(function(x){var b=el("button","act",x[0]);b.type="button";b.onclick=function(){copy(x[1],b)};ac.appendChild(b)});
+ d.appendChild(ac);return d}
+function ringEl(s,col){var r=el("div","ring");r.style.setProperty("--s",s);r.style.setProperty("--c",col);r.appendChild(el("span","",String(s)));return r}
+function cardEl(i){
+ var s=score(i),t=tier(s),c=el("article","card"),b=el("button","");b.type="button";b.setAttribute("aria-expanded",open===i.id);
+ b.style.setProperty("--c",t[1]);b.appendChild(ringEl(s,t[1]));
+ var body=el("div","body");if(t[0])body.appendChild(el("div","kick",t[0]));
+ body.appendChild(el("span","ttl",i.title));body.appendChild(metaLine(i));b.appendChild(body);
+ b.onclick=function(){open=open===i.id?null:i.id;render()};c.appendChild(b);
+ if(open===i.id)c.appendChild(detail(i,s));return c}
+function rowEl(i){
+ var s=score(i),t=tier(s),w=el("div","item row-wrap"),r=el("button","row");r.type="button";r.setAttribute("aria-expanded",open===i.id);
+ r.style.setProperty("--c",t[1]);r.appendChild(el("span","pill",String(s)));
+ var m=el("span","");m.style.cssText="min-width:0;flex:1";m.appendChild(el("span","ttl",i.title));m.appendChild(metaLine(i));r.appendChild(m);
  r.onclick=function(){open=open===i.id?null:i.id;render()};w.appendChild(r);
- if(open===i.id){
-  var d=el("div","detail");if(i.summary)d.appendChild(el("p","",i.summary));
-  var a=el("div","acts"),o=el("a","act","Open story ↗");o.href=safe(i.link);o.target="_blank";o.rel="noopener";a.appendChild(o);
-  [["Copy headline",i.title],["Copy link",i.link]].forEach(function(x){var b=el("button","act",x[0]);b.type="button";b.onclick=function(){copy(x[1],b)};a.appendChild(b)});
-  d.appendChild(a);w.appendChild(d)}
- return w}
-function section(title,items,cls,pick){
- if(!items.length)return null;
- var f=document.createDocumentFragment();f.appendChild(el("h2",cls,title));
- var shown=more[title]?items:items.slice(0,LIMIT);
- var l=el("div","list");shown.forEach(function(i){l.appendChild(itemEl(i,pick))});
- if(shown.length<items.length){var b=el("button","act","Show "+(items.length-shown.length)+" more");b.type="button";b.style.cssText="display:block;width:100%;padding:12px;border-top:1px solid var(--line)";b.onclick=function(){more[title]=1;render()};l.appendChild(b)}
- f.appendChild(l);return f}
+ if(open===i.id)w.appendChild(detail(i,s));return w}
+function listEl(items){var l=el("div","list");items.forEach(function(i){l.appendChild(rowEl(i))});return l}
+function head(title,withSeg){var h=el("div","head");h.appendChild(el("h2","",title));
+ if(withSeg){var sg=el("div","seg");[["hot","Hot"],["new","Newest"]].forEach(function(x){var b=el("button","",x[1]);b.type="button";b.setAttribute("aria-pressed",sort===x[0]);b.onclick=function(){sort=x[0];open=null;render()};sg.appendChild(b)});h.appendChild(sg)}
+ return h}
 function render(){
- var items=DATA.items;
+ var items=DATA.items.map(function(i){i._s=score(i);return i});
  var cats=$("cats");cats.textContent="";
  CATS.forEach(function(c){var n=items.filter(function(i){return (c==="All"||i.cat===c)&&inCity(i)}).length;
-  cats.appendChild(chip(c,n,c===cat,function(){cat=c;open=null;more={};render()}))});
+  cats.appendChild(chip(c,n,c===cat,function(){cat=c;open=null;restOpen=false;restLimit=40;newLimit=30;render()}))});
  var counts={};items.forEach(function(i){if(inCat(i))(i.cities||[]).forEach(function(c){counts[c]=(counts[c]||0)+1})});
  var cs=$("cities");cs.textContent="";
- cs.appendChild(chip("All cities",null,city==="All",function(){city="All";open=null;more={};render()},true));
+ cs.appendChild(chip("All cities",null,city==="All",function(){city="All";open=null;restOpen=false;restLimit=40;newLimit=30;render()},true));
  Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).forEach(function(c){
-  cs.appendChild(chip(c,counts[c],city===c,function(){city=c;open=null;more={};render()},true))});
+  cs.appendChild(chip(c,counts[c],city===c,function(){city=c;open=null;restOpen=false;restLimit=40;newLimit=30;render()},true))});
  var out=$("out");out.textContent="";
  var f=items.filter(function(i){return inCat(i)&&inCity(i)});
- if(!f.length){out.appendChild(el("div","empty","Nothing here yet. Try All cities."));}
- var picks=f.filter(function(i){return i.breaking&&hours(i)<=24}).slice(0,5);
- var ids={};picks.forEach(function(i){ids[i.id]=1});
- var rest=f.filter(function(i){return !ids[i.id]});
- [section("★ Top picks to post",picks,"pick",true),
-  section("Last 24 hours",rest.filter(function(i){return hours(i)<=24}),""),
-  section("Earlier this week",rest.filter(function(i){return hours(i)>24}),"")
- ].forEach(function(p){if(p)out.appendChild(p)});
- var det=el("details","src"),ok=DATA.feeds.filter(function(x){return x.ok}).length;
- det.appendChild(el("summary","","Sources: "+ok+" of "+DATA.feeds.length+" working"));
+ if(!f.length){out.appendChild(el("div","empty","Nothing here yet. Try All cities."))}
+ else if(sort==="hot"){
+  f.sort(function(a,b){return b._s-a._s||when(b)-when(a)});
+  var top=f.slice(0,TOP),rising=f.slice(TOP,TOP+RISING),rest=f.slice(TOP+RISING);
+  out.appendChild(head("Top stories right now",true));
+  var g=el("div","cards");top.forEach(function(i){g.appendChild(cardEl(i))});out.appendChild(g);
+  if(rising.length){out.appendChild(head("Also moving",false));out.appendChild(listEl(rising))}
+  if(rest.length){
+   if(!restOpen){var b=el("button","more","Show "+rest.length+" more stories");b.type="button";b.onclick=function(){restOpen=true;render()};out.appendChild(b)}
+   else{out.appendChild(head("Everything else",false));out.appendChild(listEl(rest.slice(0,restLimit)));
+    if(rest.length>restLimit){var m=el("button","more","Show "+(rest.length-restLimit)+" more");m.type="button";m.onclick=function(){restLimit+=60;render()};out.appendChild(m)}}}
+ } else {
+  f.sort(function(a,b){return when(b)-when(a)});
+  out.appendChild(head("Newest first",true));
+  out.appendChild(listEl(f.slice(0,newLimit)));
+  if(f.length>newLimit){var nb=el("button","more","Show "+Math.min(60,f.length-newLimit)+" more");nb.type="button";nb.onclick=function(){newLimit+=60;render()};out.appendChild(nb)}
+ }
+ var det=el("details","info"),ok=DATA.feeds.filter(function(x){return x.ok}).length;
+ det.appendChild(el("summary","","How scores work and source status"));
+ det.appendChild(el("p","","The 0 to 100 score adds up how many outlets cover the same story, how urgent or high-stakes the wording is, whether it has a strong hook, whether a local outlet reported it, whether a city is named, and how fresh it is. Tap a story to see exactly why it scored what it did."));
+ det.appendChild(el("p","","Sources: "+ok+" of "+DATA.feeds.length+" working."));
  DATA.feeds.forEach(function(x){var r=el("div","s");r.appendChild(el("span","",x.name));r.appendChild(el("span",x.ok?"":"bad",x.ok?x.count+" items":"failed"));det.appendChild(r)});
  out.appendChild(det);
  $("stamp").textContent="updated "+ago(DATA.generated)}
@@ -131,7 +178,6 @@ function load(manual){
   DATA=d;render();if(manual)t.textContent="Up to date"}).catch(function(){
   if(!DATA){$("out").textContent="";$("out").appendChild(el("div","empty","No news yet. The first update runs automatically and can take a few minutes after setup."));$("stamp").textContent=""}
   if(manual)t.textContent="Couldn't refresh"})}
-// pull to refresh
 var y0=null,pull=0,ptr=$("ptr");
 window.addEventListener("touchstart",function(e){y0=window.scrollY<=0?e.touches[0].clientY:null;pull=0},{passive:true});
 window.addEventListener("touchmove",function(e){if(y0==null)return;pull=e.touches[0].clientY-y0;
