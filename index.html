@@ -5,17 +5,26 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Valley Feed">
-<meta name="theme-color" content="#1F3864">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap">
 <title>Valley of AZ Feed</title>
 <style>
-:root{--bg:#f5f4f0;--card:#fff;--ink:#1a1d24;--muted:#667085;--line:#e4e2db;--accent:#1F3864;--accent-ink:#fff;--hot:#d9380b;--rise:#c47f0a;--calm:#7a8699}
-@media (prefers-color-scheme:dark){:root{--bg:#0f1218;--card:#181c25;--ink:#eceef3;--muted:#98a1b3;--line:#272c38;--accent:#8fb0ff;--accent-ink:#0f1218;--hot:#ff6a3d;--rise:#f2b233;--calm:#6c7890;color-scheme:dark}}
+:root{--bg:#0a0a0a;--card:#141414;--ink:#f2f2f2;--muted:#9b9b9b;--line:#2a2a2a;--accent:#C4F765;--accent-ink:#0a0a0a;--hot:#C4F765;--rise:#f2b233;--calm:#6d6d6d;color-scheme:dark;--display:Anton,"Arial Narrow",Impact,sans-serif}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 max(16px,env(safe-area-inset-right)) calc(48px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.35 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 max(16px,env(safe-area-inset-right)) calc(48px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
 .wrap{max-width:720px;margin:0 auto}
-.title{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:calc(env(safe-area-inset-top) + 12px) 0 4px}
-h1{font-size:22px;margin:0;letter-spacing:-.01em}
+.title{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:calc(env(safe-area-inset-top) + 12px) 0 4px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand img{width:44px;height:44px;border-radius:50%;flex:none}
+h1{font-family:var(--display);font-weight:400;font-size:28px;line-height:1;margin:0;letter-spacing:.01em;text-transform:uppercase}
+.sub{display:block;font-family:Inter,sans-serif;font-size:11px;letter-spacing:.14em;color:var(--accent);margin-top:3px;font-weight:600}
 .stamp{font-size:12px;color:var(--muted);white-space:nowrap}
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:6px 0 8px;margin-top:2px;border-bottom:1px solid var(--line)}
 .chips{display:flex;gap:6px;overflow-x:auto;padding:3px 0;scrollbar-width:none}
@@ -30,7 +39,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
 #ptr{height:0;overflow:hidden;text-align:center;font-size:13px;color:var(--muted);transition:height .15s}
 #ptr span{display:block;padding-top:10px}
 .head{display:flex;justify-content:space-between;align-items:center;margin:20px 2px 8px}
-h2{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:0;font-weight:600}
+h2{font-family:var(--display);font-weight:400;font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
 .seg button{border:0;background:none;color:var(--muted);font:inherit;font-size:13px;padding:5px 12px;cursor:pointer}
 .seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
@@ -40,17 +49,17 @@ h2{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .card>button{display:flex;gap:12px;width:100%;text-align:left;background:none;border:0;color:inherit;font:inherit;padding:14px;cursor:pointer;align-items:flex-start}
 .ring{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;position:relative;background:conic-gradient(var(--c) calc(var(--s)*1%),var(--line) 0)}
 .ring::after{content:"";position:absolute;inset:5px;border-radius:50%;background:var(--card)}
-.ring span{position:relative;z-index:1;font-weight:700;font-size:16px;font-variant-numeric:tabular-nums}
+.ring span{position:relative;z-index:1;font-family:var(--display);font-weight:400;font-size:21px;font-variant-numeric:tabular-nums}
 .body{min-width:0;flex:1}
-.kick{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c);margin-bottom:3px}
-.card .ttl{font-size:17px;font-weight:650;line-height:1.28;display:block;overflow-wrap:anywhere}
+.kick{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:3px}
+.card .ttl{font-family:var(--display);font-weight:400;font-size:22px;line-height:1.12;letter-spacing:.015em;text-transform:uppercase;display:block;overflow-wrap:anywhere}
 .meta{font-size:12px;color:var(--muted);margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 10px}
 .meta .city{color:var(--accent);font-weight:600}
 /* compact rows */
 .list{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .item+.item{border-top:1px solid var(--line)}
 .row{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;background:none;border:0;color:inherit;font:inherit;padding:11px 12px;cursor:pointer}
-.pill{flex:none;min-width:34px;text-align:center;font-weight:700;font-size:13px;padding:3px 0;border-radius:8px;color:var(--c);border:1.5px solid var(--c);font-variant-numeric:tabular-nums}
+.pill{flex:none;min-width:34px;text-align:center;font-family:var(--display);font-weight:400;font-size:15px;padding:3px 0;border-radius:8px;color:var(--c);border:1.5px solid var(--c);font-variant-numeric:tabular-nums}
 .row .ttl{font-weight:600;font-size:15px;display:block;overflow-wrap:anywhere}
 .row .meta{margin-top:3px}
 /* expanded detail */
@@ -76,7 +85,7 @@ details.info p{color:var(--muted);margin:8px 0 0}
 </head>
 <body>
 <div class="wrap">
- <div class="title"><h1>Valley of AZ Feed</h1><span class="stamp" id="stamp">loading…</span></div>
+ <div class="title"><div class="brand"><img src="assets/logo.png" alt="Valley of AZ"><h1>Valley of AZ<span class="sub">NEWS FEED</span></h1></div><span class="stamp" id="stamp">loading…</span></div>
  <div class="bar">
   <div class="chips" id="cats" role="group" aria-label="Topic"></div>
   <div class="chips" id="cities" role="group" aria-label="City"></div>
