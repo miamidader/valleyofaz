@@ -240,6 +240,38 @@
       "group": "News search",
       "enabled": true,
       "status": "untested"
+    },
+    {
+      "id": "open-0",
+      "name": "Google News: Openings, restaurants",
+      "url": "https://news.google.com/rss/search?q=%28%22now+open%22+OR+%22opening+soon%22+OR+%22grand+opening%22+OR+%22coming+soon%22+OR+%22opens%22%29+%28restaurant+OR+cafe+OR+bakery+OR+coffee+OR+eatery%29+%28Phoenix+OR+Mesa+OR+Chandler+OR+Gilbert+OR+Scottsdale+OR+Tempe+OR+Glendale+OR+Peoria+OR+Surprise+OR+Goodyear+OR+Avondale+OR+Buckeye+OR+%22Queen+Creek%22%29+Arizona+when%3A7d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search",
+      "enabled": true,
+      "status": "untested"
+    },
+    {
+      "id": "open-1",
+      "name": "Google News: Openings, bars and breweries",
+      "url": "https://news.google.com/rss/search?q=%28%22now+open%22+OR+%22opening+soon%22+OR+%22grand+opening%22+OR+%22coming+soon%22+OR+%22opens%22%29+%28bar+OR+cocktail+OR+taproom+OR+brewery+OR+lounge+OR+nightclub%29+%28Phoenix+OR+Mesa+OR+Chandler+OR+Gilbert+OR+Scottsdale+OR+Tempe+OR+Glendale+OR+Peoria+OR+Surprise+OR+Goodyear+OR+Avondale+OR+Buckeye+OR+%22Queen+Creek%22%29+Arizona+when%3A7d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search",
+      "enabled": true,
+      "status": "untested"
+    },
+    {
+      "id": "open-2",
+      "name": "Google News: Openings, stores and retail",
+      "url": "https://news.google.com/rss/search?q=%28%22now+open%22+OR+%22opening+soon%22+OR+%22grand+opening%22+OR+%22coming+soon%22+OR+%22first+Arizona+location%22+OR+%22opens%22%29+%28store+OR+shop+OR+boutique+OR+retail+OR+mall%29+%28Phoenix+OR+Mesa+OR+Chandler+OR+Gilbert+OR+Scottsdale+OR+Tempe+OR+Glendale+OR+Peoria+OR+Surprise+OR+Goodyear+OR+Avondale+OR+Buckeye+OR+%22Queen+Creek%22%29+Arizona+when%3A7d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search",
+      "enabled": true,
+      "status": "untested"
+    },
+    {
+      "id": "open-3",
+      "name": "Google News: Openings, buildings and development",
+      "url": "https://news.google.com/rss/search?q=%28%22breaks+ground%22+OR+groundbreaking+OR+%22ribbon+cutting%22+OR+%22opening+soon%22+OR+%22now+open%22+OR+%22coming+soon%22%29+%28hotel+OR+tower+OR+development+OR+building+OR+apartments+OR+%22mixed-use%22%29+%28Phoenix+OR+Mesa+OR+Chandler+OR+Gilbert+OR+Scottsdale+OR+Tempe+OR+Glendale+OR+Peoria+OR+Surprise+OR+Goodyear+OR+Avondale+OR+Buckeye+OR+%22Queen+Creek%22%29+Arizona+when%3A7d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search",
+      "enabled": true,
+      "status": "untested"
     }
   ]
 }

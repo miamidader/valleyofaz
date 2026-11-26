@@ -137,10 +137,24 @@ DROP_SOURCES = {"wisevoter"}
 DROP_TITLE_WORDS = ["obituary", "obituaries"]
 SPORTS_WORDS = ["suns", "cardinals", "diamondbacks", "d-backs", "coyotes", "mercury", "sun devils", "asu ", "wildcats", "high school", "playoff", "nfl", "nba", "mlb", "nhl", "wnba", "ncaa", "football", "basketball", "baseball", "softball", "volleyball", "soccer", "golf", "quarterback", "touchdown", "recruit", "tournament", "preseason", "postseason", "box score", "halftime", "all-star"]
 
+OPEN_PHRASES = ["now open", "grand opening", "opening soon", "opens soon", "coming soon", "to open", "set to open", "will open", "opens its doors", "opening date", "ribbon cutting", "ribbon-cutting", "new location", "first location", "first arizona location", "soft opening", "breaks ground", "broke ground", "groundbreaking", "unveils plans", "now leasing", "debuts"]
+OPEN_VERBS = ["opens", "opening", "opened", "open its", "open a "]
+OPEN_NOUNS = ["restaurant", "bar ", "cafe", "café", "coffee", "brewery", "taproom", "store", "shop", "bakery", "market", "mall", "hotel", "gym", "bistro", "grill", "kitchen", "pizzeria", "boutique", "dispensary", "club", "venue", "brand", "lounge", "eatery", "diner", "ice cream", "donut", "tower", "apartments", "development", "center", "studio", "salon", "spa", "brewing", "distillery", "winery", "gas station", "costco", "walmart", "target", "trader joe", "whole foods", "ikea", "food hall", "restaurants"]
+NOT_OPEN = ["opens fire", "open enrollment", "open records", "open meeting", "opens investigation", "opened fire", "open season", "opens up about", "opening statement", "opening kickoff", "opening night"]
+
+
+def is_opening(low):
+    if any(w in low for w in NOT_OPEN):
+        return False
+    if any(w in low for w in OPEN_PHRASES):
+        return True
+    return any(v in low for v in OPEN_VERBS) and any(n in low for n in OPEN_NOUNS)
+
+
 CATEGORIES = [
     ("Crime & Safety", ["shot", "shooting", "killed", "homicide", "murder", "police", "arrest", "suspect", "stabbing", "chase", "fire", "explosion", "standoff", "barricade", "missing", "amber alert", "indicted", "sentenced", "drowning", "rescue", "deputies", "sheriff"]),
     ("Roads & Weather", ["crash", "collision", "freeway", "highway", "i-10", "i-17", "loop 101", "loop 202", "sr 51", "closure", "closed", "traffic", "adot", "light rail", "forecast", "weather", "storm", "rain", "heat", "flood", "wind", "monsoon", "airport", "sky harbor"]),
-    ("Government", ["council", "mayor", "election", "runoff", "budget", "vote", "voters", "ordinance", "county board", "supervisors", "legislature", "governor", "lawsuit", "settle", "tax", "water services", "drought", "city manager", "esa", "schools board", "zoning", "permit"]),
+    ("Government", ["council", "mayor", "election", "runoff", "budget", "vote", "voters", "ordinance", "county board", "supervisors", "legislature", "governor", "lawsuit", "settle", "tax", "water services", "drought", "city manager", " esa ", "schools board", "zoning", "permit"]),
 ]
 
 
@@ -148,6 +162,8 @@ def categorize(text, source=""):
     low = text.lower()
     if source.lower() in SPORTS_SOURCES or any(w in low for w in SPORTS_WORDS):
         return "Sports"
+    if is_opening(low):
+        return "Openings"
     for name, words in CATEGORIES:
         if any(w in low for w in words):
             return name
@@ -169,7 +185,7 @@ def norm_title(title):
 
 STOP = set("a an the of in on at to for and or but with as by from is are was were be been after before over into near amid says say said new via vs his her its their who what how why".split())
 LOCAL_OUTLETS = ["abc15", "azfamily", "az family", "12news", "fox 10", "ktar", "azcentral", "arizona republic", "phoenix new times", "axios", "kjzz", "cbs news 5", "kpnx", "kpho", "city of ", "police", "fire department"]
-CAT_WEIGHT = {"Crime & Safety": 14, "Roads & Weather": 10, "Government": 8, "Community": 6, "Sports": 4}
+CAT_WEIGHT = {"Crime & Safety": 14, "Roads & Weather": 10, "Openings": 12, "Government": 8, "Community": 6, "Sports": 4}
 HIGH_WORDS = ["shot", "shooting", "killed", "dead", "death", "homicide", "murder", "explosion", "standoff", "evacuat", "missing", "amber alert", "stabbing", "wildfire", "drowning", "crash", "chase", "barricade"]
 HOOK_WORDS = ["video", "caught on camera", "viral", "shocking", "surprising", "first", "record", "rare", "mystery", "discover", "rescued", "dog", "kids", "child", "baby", "massive", "huge", "closing", "closes", "opens", "opening", "free", "warning", "warns"]
 
