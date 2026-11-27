@@ -198,7 +198,7 @@ function render(){
   if(f.length>newLimit){var nb=el("button","more","Show "+Math.min(60,f.length-newLimit)+" more");nb.type="button";nb.onclick=function(){newLimit+=60;render()};out.appendChild(nb)}
  }
  var det=el("details","info"),ok=DATA.feeds.filter(function(x){return x.ok}).length;
- det.appendChild(el("summary","","How scores work and source status"));
+ det.appendChild(el("summary","","How scores work and source status · app v7"));
  det.appendChild(el("p","","The 0 to 100 score adds up how many outlets cover the same story, how urgent or high-stakes the wording is, whether it has a strong hook, whether a local outlet reported it, whether a city is named, and how fresh it is. Tap a story to see exactly why it scored what it did."));
  det.appendChild(el("p","","Sources: "+ok+" of "+DATA.feeds.length+" working."));
  DATA.feeds.forEach(function(x){var r=el("div","s");r.appendChild(el("span","",x.name));r.appendChild(el("span",x.ok?"":"bad",x.ok?x.count+" items":"failed"));det.appendChild(r)});
