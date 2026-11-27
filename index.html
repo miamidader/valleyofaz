@@ -19,7 +19,7 @@
 <style>
 :root{--bg:#0a0a0a;--card:#141414;--ink:#f2f2f2;--muted:#9b9b9b;--line:#2a2a2a;--accent:#C4F765;--accent-ink:#0a0a0a;--hot:#C4F765;--rise:#f2b233;--calm:#6d6d6d;color-scheme:dark;--display:Anton,"Arial Narrow",Impact,sans-serif}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:contain}body{overscroll-behavior-y:contain}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.35 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 max(16px,env(safe-area-inset-right)) calc(48px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
 .wrap{max-width:720px;margin:0 auto}
 .title{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:calc(env(safe-area-inset-top) + 12px) 0 4px}
@@ -209,7 +209,7 @@ function load(manual){
  loadHistory();
  var t=$("ptrtxt");if(manual)t.textContent="Refreshing…";
  return fetch("data/items.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
-  DATA=d;render();if(manual)t.textContent="Up to date"}).catch(function(){
+  DATA=d;render();if(manual)t.textContent="Latest data: "+ago(d.generated)}).catch(function(){
   if(!DATA){$("out").textContent="";$("out").appendChild(el("div","empty","No news yet. The first update runs automatically and can take a few minutes after setup."));$("stamp").textContent=""}
   if(manual)t.textContent="Couldn't refresh"})}
 var y0=null,pull=0,busy=false,ptr=$("ptr"),TH=70;
