@@ -46,6 +46,11 @@ def parse(data):
             blob = " ".join([e.get("text", "")] + [p.get("description", "") + " " + p.get("extract", "") for p in pages])
             if not AZ.search(blob):
                 continue
+            if kind != "event":
+                # People only count when their own one-line description ties them to Arizona
+                # (e.g. "Governor of Arizona"); a passing mention in the bio is not enough.
+                if not any(AZ.search(p.get("description", "")) for p in pages):
+                    continue
             page = next((p for p in pages if AZ.search(p.get("description", "") + " " + p.get("extract", ""))), pages[0] if pages else {})
             url = ((page.get("content_urls") or {}).get("desktop") or {}).get("page", "")
             if not url.startswith("https://"):
@@ -58,7 +63,9 @@ def parse(data):
                 "url": url,
             })
     found.sort(key=lambda x: (KIND_ORDER[x["kind"]], -(x["year"] or 0)))
-    return found[:MAX_ITEMS]
+    events = [f for f in found if f["kind"] == "event"]
+    people = [f for f in found if f["kind"] != "event"][:2]  # events first; at most two people
+    return (events + people)[:MAX_ITEMS]
 
 
 def curated_for(mmdd):
