@@ -38,8 +38,8 @@ h1{font-family:var(--display);font-weight:400;font-size:28px;line-height:1;margi
 .chip.sm{font-size:13px;padding:4px 10px;background:transparent}
 .chip.sm[aria-pressed="true"]{background:var(--accent)}
 button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-#ptr{height:0;overflow:hidden;text-align:center;font-size:13px;color:var(--muted);transition:height .15s}
-#ptr span{display:block;padding-top:10px}
+#ptr{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 8px);z-index:20;transform:translate(-50%,-80px);background:var(--accent);color:#000;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.5);opacity:0}
+#ptr.snap{transition:transform .2s,opacity .2s}
 .head{display:flex;justify-content:space-between;align-items:center;margin:20px 2px 8px}
 h2{font-family:var(--display);font-weight:400;font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
@@ -212,12 +212,20 @@ function load(manual){
   DATA=d;render();if(manual)t.textContent="Up to date"}).catch(function(){
   if(!DATA){$("out").textContent="";$("out").appendChild(el("div","empty","No news yet. The first update runs automatically and can take a few minutes after setup."));$("stamp").textContent=""}
   if(manual)t.textContent="Couldn't refresh"})}
-var y0=null,pull=0,ptr=$("ptr");
-window.addEventListener("touchstart",function(e){y0=window.scrollY<=0?e.touches[0].clientY:null;pull=0},{passive:true});
-window.addEventListener("touchmove",function(e){if(y0==null)return;pull=e.touches[0].clientY-y0;
- if(pull>0&&window.scrollY<=0){ptr.style.height=Math.min(pull/2,50)+"px";$("ptrtxt").textContent=pull>110?"Release to refresh":"Pull to refresh"}},{passive:true});
-window.addEventListener("touchend",function(){if(y0==null)return;
- if(pull>110){ptr.style.height="40px";load(true).then(function(){setTimeout(function(){ptr.style.height="0"},800)})}else ptr.style.height="0";y0=null;pull=0});
+var y0=null,pull=0,busy=false,ptr=$("ptr"),TH=70;
+function ptrShow(p){ptr.classList.remove("snap");ptr.style.opacity=Math.min(1,p/40);ptr.style.transform="translate(-50%,"+(Math.min(p,110)-80)+"px)"}
+function ptrHide(){ptr.classList.add("snap");ptr.style.opacity=0;ptr.style.transform="translate(-50%,-80px)"}
+function atTop(){return (window.scrollY||document.documentElement.scrollTop||0)<=2}
+window.addEventListener("touchstart",function(e){y0=atTop()?e.touches[0].clientY:null;pull=0},{passive:true});
+window.addEventListener("touchmove",function(e){if(busy)return;
+ if(y0==null){if(atTop())y0=e.touches[0].clientY;return}
+ pull=e.touches[0].clientY-y0;
+ if(pull>0&&atTop()){$("ptrtxt").textContent=pull>TH?"Release to refresh":"Pull to refresh";ptrShow(pull/1.5)}else if(pull<=0){ptrHide()}},{passive:true});
+function endPull(){if(y0==null||busy){y0=null;pull=0;return}
+ if(pull>TH){busy=true;ptr.classList.add("snap");ptr.style.opacity=1;ptr.style.transform="translate(-50%,0)";
+  load(true).then(function(){setTimeout(function(){ptrHide();busy=false},900)})}else ptrHide();
+ y0=null;pull=0}
+window.addEventListener("touchend",endPull);window.addEventListener("touchcancel",endPull);
 document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible")load()});
 load();
 })();
