@@ -1,27 +1,5 @@
 {
  "date": "11-27",
  "label": "Nov 27",
- "items": [
-  {
-   "kind": "birth",
-   "year": 1989,
-   "text": "Michael Floyd, American football player",
-   "title": "Michael Floyd",
-   "url": "https://en.wikipedia.org/wiki/Michael_Floyd"
-  },
-  {
-   "kind": "birth",
-   "year": 1977,
-   "text": "Willie Bloomquist, American baseball player",
-   "title": "Willie Bloomquist",
-   "url": "https://en.wikipedia.org/wiki/Willie_Bloomquist"
-  },
-  {
-   "kind": "birth",
-   "year": 1957,
-   "text": "Michael A. Stackpole, American game designer and author",
-   "title": "Michael A. Stackpole",
-   "url": "https://en.wikipedia.org/wiki/Michael_A._Stackpole"
-  }
- ]
+ "items": []
 }
