@@ -12,7 +12,9 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-OUT = Path(__file__).resolve().parent.parent / "data" / "history.json"
+DATA = Path(__file__).resolve().parent.parent / "data"
+OUT = DATA / "history.json"
+CURATED = DATA / "history_curated.json"
 URL = "https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/{mm}/{dd}"
 UA = "valleyofaz-reader/1.0 (news feed for the Phoenix area)"
 MAX_ITEMS = 8
@@ -59,13 +61,26 @@ def parse(data):
     return found[:MAX_ITEMS]
 
 
+def curated_for(mmdd):
+    """Hand-checked entries (each confirmed against two sources) for this date."""
+    try:
+        rows = json.loads(CURATED.read_text())
+    except (OSError, ValueError):
+        return []
+    return [{"kind": r.get("kind", "event"), "year": r["year"], "text": r["text"], "title": r.get("source", ""), "url": r.get("url", "")}
+            for r in rows if r.get("date") == mmdd]
+
+
 def main():
     today = datetime.now(ZoneInfo("America/Phoenix"))
+    mine = curated_for(f"{today:%m-%d}")
     items = []
     try:
         items = parse(fetch(f"{today:%m}", f"{today:%d}"))
     except Exception as exc:  # noqa: BLE001 - history is a bonus, never fail the run
         print("history lookup failed:", type(exc).__name__, str(exc)[:120])
+    years = {m["year"] for m in mine}
+    items = (mine + [i for i in items if i["year"] not in years])[:MAX_ITEMS]
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"date": f"{today:%m-%d}", "label": f"{today:%b} {today.day}", "items": items}, indent=1, ensure_ascii=False))
     print(f"{len(items)} history items for {today:%m-%d}")

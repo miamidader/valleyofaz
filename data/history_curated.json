@@ -1,0 +1,130 @@
+[
+ {
+  "date": "01-28",
+  "year": 1996,
+  "text": "Super Bowl XXX is played at Sun Devil Stadium in Tempe; Dallas beats Pittsburgh 27-17.",
+  "url": "https://www.dallascowboys.com/photos/on-this-date-1-28-1996-super-bowl-xxx-371371",
+  "source": "Dallas Cowboys (team site)",
+  "kind": "event"
+ },
+ {
+  "date": "02-14",
+  "year": 1912,
+  "text": "Arizona is admitted to the Union as the 48th state.",
+  "url": "https://www.presidency.ucsb.edu/documents/proclamation-1180-admitting-arizona-the-union",
+  "source": "Proclamation 1180 (American Presidency Project)",
+  "kind": "event"
+ },
+ {
+  "date": "02-18",
+  "year": 1930,
+  "text": "Clyde Tombaugh discovers Pluto at Lowell Observatory in Flagstaff.",
+  "url": "https://aas.org/posts/news/2017/02/month-astronomical-history-discovery-pluto",
+  "source": "American Astronomical Society",
+  "kind": "event"
+ },
+ {
+  "date": "02-24",
+  "year": 1863,
+  "text": "President Lincoln signs the act creating Arizona Territory.",
+  "url": "https://www.archives.gov/legislative/features/nm-az-statehood/hr357.html",
+  "source": "National Archives, Center for Legislative Archives",
+  "kind": "event"
+ },
+ {
+  "date": "02-25",
+  "year": 1881,
+  "text": "Phoenix is incorporated as a city.",
+  "url": "https://phoenix.gov/piosite/Pages/History.aspx",
+  "source": "City of Phoenix history page",
+  "kind": "event"
+ },
+ {
+  "date": "02-26",
+  "year": 1919,
+  "text": "Grand Canyon National Park is established.",
+  "url": "https://www.loc.gov/item/today-in-history/february-26/",
+  "source": "Library of Congress, Today in History",
+  "kind": "event"
+ },
+ {
+  "date": "03-13",
+  "year": 1930,
+  "text": "Lowell Observatory in Flagstaff announces the discovery of Pluto.",
+  "url": "https://www.aps.org/apsnews/2009/03/tombaugh-discovery-pluto-1930",
+  "source": "American Physical Society",
+  "kind": "event"
+ },
+ {
+  "date": "03-18",
+  "year": 1911,
+  "text": "Former President Theodore Roosevelt dedicates Roosevelt Dam on the Salt River.",
+  "url": "https://www.usbr.gov/lc/phoenix/projects/rooseveltdam/rdhistory.html",
+  "source": "U.S. Bureau of Reclamation",
+  "kind": "event"
+ },
+ {
+  "date": "03-31",
+  "year": 1927,
+  "text": "Labor leader Cesar Chavez is born near Yuma.",
+  "url": "https://www.britannica.com/biography/Cesar-Chavez",
+  "source": "Britannica",
+  "kind": "birth"
+ },
+ {
+  "date": "03-31",
+  "year": 1998,
+  "text": "The Arizona Diamondbacks play their first game at Bank One Ballpark, now Chase Field, losing 9-2 to Colorado.",
+  "url": "https://arizonasports.com/mlb/arizona-diamondbacks/diamondbacks-20th-anniversary-inaugural-game",
+  "source": "Arizona Sports",
+  "kind": "event"
+ },
+ {
+  "date": "09-16",
+  "year": 2007,
+  "text": "The Phoenix Mercury win their first WNBA championship, beating the Detroit Shock 3-2 in the Finals.",
+  "url": "https://www.si.com/wnba/mercury/phoenix-top-players-move-ball-team-wins-it-all",
+  "source": "Sports Illustrated (photo caption)",
+  "kind": "event"
+ },
+ {
+  "date": "09-25",
+  "year": 1981,
+  "text": "Sandra Day O'Connor, a judge on the Arizona Court of Appeals, is sworn in as the first woman on the U.S. Supreme Court.",
+  "url": "https://news.asu.edu/20210923-arizona-impact-asu-law-40th-anniversary-sandra-day-oconnor-supreme-court",
+  "source": "ASU News",
+  "kind": "event"
+ },
+ {
+  "date": "09-26",
+  "year": 1991,
+  "text": "Eight crew members are sealed inside Biosphere 2 near Oracle for a two-year experiment.",
+  "url": "https://www.earthmagazine.org/article/benchmarks-september-26-1991-crew-sealed-inside-biosphere-2/",
+  "source": "Earth Magazine",
+  "kind": "event"
+ },
+ {
+  "date": "09-30",
+  "year": 1935,
+  "text": "President Franklin Roosevelt dedicates Hoover Dam on the Arizona-Nevada border.",
+  "url": "https://www.usbr.gov/lc/hooverdam/history/articles/chrono.html",
+  "source": "Bureau of Reclamation chronology",
+  "kind": "event"
+ },
+ {
+  "date": "10-26",
+  "year": 1881,
+  "text": "The Gunfight at the O.K. Corral takes place in Tombstone.",
+  "url": "https://text-message.blogs.archives.gov/2011/10/26/how-the-west-was-won-marshal-dake-the-earp-brothers-and-the-tombstone-shootout",
+  "source": "National Archives blog",
+  "kind": "event"
+ },
+ {
+  "date": "11-04",
+  "year": 2001,
+  "text": "The Arizona Diamondbacks win the World Series on Luis Gonzalez's walk-off single in Game 7 against the Yankees.",
+  "url": "https://sabr.org/gamesproj/game/november-4-2001-luis-gonzalezs-walk-off-single-lifts-diamondbacks-to-game-7-win-over-yankees",
+  "source": "SABR Games Project",
+  "kind": "event"
+ }
+]
