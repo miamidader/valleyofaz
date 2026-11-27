@@ -1,5 +1,13 @@
 [
  {
+  "date": "01-04",
+  "year": 1999,
+  "text": "Jane Dee Hull and four other women are sworn in, giving Arizona an all-female line of succession.",
+  "url": "https://www.nbcnews.com/politics/politics-news/jane-hull-first-woman-elected-arizona-governor-dies-84-n1186906",
+  "source": "NBC News; Feminist Majority Foundation",
+  "kind": "event"
+ },
+ {
   "date": "01-28",
   "year": 1996,
   "text": "Super Bowl XXX is played at Sun Devil Stadium in Tempe; Dallas beats Pittsburgh 27-17.",
@@ -125,6 +133,38 @@
   "text": "The Arizona Diamondbacks win the World Series on Luis Gonzalez's walk-off single in Game 7 against the Yankees.",
   "url": "https://sabr.org/gamesproj/game/november-4-2001-luis-gonzalezs-walk-off-single-lifts-diamondbacks-to-game-7-win-over-yankees",
   "source": "SABR Games Project",
+  "kind": "event"
+ },
+ {
+  "date": "11-28",
+  "year": 2012,
+  "text": "A Fountain Hills ticket wins the $587.5 million Powerball jackpot, then the second-largest in U.S. history.",
+  "url": "https://www.csmonitor.com/USA/2012/1129/Powerball-winners-Arizona-and-Missouri-share-587.5-million-jackpot",
+  "source": "Christian Science Monitor; GlobeNewswire",
+  "kind": "event"
+ },
+ {
+  "date": "12-09",
+  "year": 1924,
+  "text": "President Coolidge establishes Wupatki National Monument near Flagstaff.",
+  "url": "https://www.presidency.ucsb.edu/documents/proclamation-1721-wupatki-national-monument-arizona",
+  "source": "American Presidency Project; National Park Service",
+  "kind": "event"
+ },
+ {
+  "date": "12-15",
+  "year": 1928,
+  "text": "The Westward Ho hotel opens in downtown Phoenix.",
+  "url": "https://sah-archipedia.org/node/23976",
+  "source": "SAH Archipedia; theclio.com",
+  "kind": "event"
+ },
+ {
+  "date": "12-28",
+  "year": 1881,
+  "text": "Virgil Earp is ambushed and wounded on a Tombstone street.",
+  "url": "https://truewestmagazine.com/?p=96635",
+  "source": "True West Magazine; Historical Marker Database",
   "kind": "event"
  }
 ]
