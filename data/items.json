@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-28T00:54:04.005712+00:00",
+ "generated": "2026-11-28T04:34:22.635287+00:00",
  "cities": [
   "Phoenix",
   "Mesa",
@@ -40,177 +40,177 @@
    "id": "gn-phoenix",
    "name": "Google News: Phoenix",
    "group": "News search",
-   "ok": true,
-   "count": 97,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-mesa",
    "name": "Google News: Mesa",
    "group": "News search",
-   "ok": true,
-   "count": 28,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-chandler",
    "name": "Google News: Chandler",
    "group": "News search",
-   "ok": true,
-   "count": 39,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-gilbert",
    "name": "Google News: Gilbert",
    "group": "News search",
-   "ok": true,
-   "count": 27,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-scottsdale",
    "name": "Google News: Scottsdale",
    "group": "News search",
-   "ok": true,
-   "count": 34,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-tempe",
    "name": "Google News: Tempe",
    "group": "News search",
-   "ok": true,
-   "count": 50,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-glendale",
    "name": "Google News: Glendale",
    "group": "News search",
-   "ok": true,
-   "count": 16,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-peoria",
    "name": "Google News: Peoria",
    "group": "News search",
-   "ok": true,
-   "count": 6,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-surprise",
    "name": "Google News: Surprise",
    "group": "News search",
-   "ok": true,
-   "count": 8,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-goodyear",
    "name": "Google News: Goodyear",
    "group": "News search",
-   "ok": true,
-   "count": 3,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-avondale",
    "name": "Google News: Avondale",
    "group": "News search",
-   "ok": true,
-   "count": 2,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-buckeye",
    "name": "Google News: Buckeye",
    "group": "News search",
-   "ok": true,
-   "count": 1,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-queen-creek",
    "name": "Google News: Queen Creek",
    "group": "News search",
-   "ok": true,
-   "count": 22,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-fountain-hills",
    "name": "Google News: Fountain Hills",
    "group": "News search",
-   "ok": true,
-   "count": 24,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-paradise-valley",
    "name": "Google News: Paradise Valley",
    "group": "News search",
-   "ok": true,
-   "count": 17,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-sun-city",
    "name": "Google News: Sun City",
    "group": "News search",
-   "ok": true,
-   "count": 14,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-west-valley",
    "name": "Google News: West Valley small towns",
    "group": "News search",
-   "ok": true,
-   "count": 14,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "gn-north-valley",
    "name": "Google News: Cave Creek, Carefree, Anthem, Laveen",
    "group": "News search",
-   "ok": true,
-   "count": 2,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "open-0",
    "name": "Google News: Openings, restaurants",
    "group": "News search",
-   "ok": true,
-   "count": 2,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "open-1",
    "name": "Google News: Openings, bars and breweries",
    "group": "News search",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": ""
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "open-2",
    "name": "Google News: Openings, stores and retail",
    "group": "News search",
-   "ok": true,
-   "count": 2,
-   "error": ""
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "id": "open-3",
    "name": "Google News: Openings, buildings and development",
    "group": "News search",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": ""
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   }
  ],
  "items": [
@@ -1209,101 +1209,6 @@
    "outlets": 1,
    "base": 6,
    "why": []
-  },
-  {
-   "id": "094317a6254d92f7",
-   "title": "AZ Compass Prep Boys Varsity Basketball @ ASUPSP",
-   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUU5PR0RlRnlKbUhDNDhhY243TmNMTVJKNHZnZUphdWt4MDZ4M09kX1o5dWd1blBvUm8wYm42Zjl0LTdNbzFibEtLN1dhY0RWT3VwaEk2cGxVQnVwQUM4cFRnTFdGUERmN0t3REVIbmdOMkJRNXNvSEkycVViVWhFYlJ5QzlCQ2Z1eFFrc2lGOWJBeHEwcUM0amI1M05QWGhfMVp5NDZKR2dpc0pCd092VHJYTE5EaU5ESmZORUNWM2gzdjkwT0hsODRLZDNOUlFNRTdUNHVGQ1dfX1dXdWRFUlNOVnZ0ZlBfc01xNWgyMnA2VW1FVENZNXZPcm1wd1RF?oc=5",
-   "summary": "",
-   "source": "MaxPreps",
-   "feed": "gn-chandler",
-   "group": "News search",
-   "cities": [
-    "Chandler",
-    "Paradise Valley",
-    "Scottsdale",
-    "Gilbert",
-    "Queen Creek",
-    "Fountain Hills",
-    "Tolleson",
-    "Glendale",
-    "Tempe",
-    "Buckeye",
-    "Mesa",
-    "Phoenix"
-   ],
-   "breaking": false,
-   "cat": "Sports",
-   "published": "2026-11-24T03:12:55+00:00",
-   "first_seen": "2026-11-25T23:33:49.250132+00:00",
-   "members": [
-    {
-     "source": "MaxPreps",
-     "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUU5PR0RlRnlKbUhDNDhhY243TmNMTVJKNHZnZUphdWt4MDZ4M09kX1o5dWd1blBvUm8wYm42Zjl0LTdNbzFibEtLN1dhY0RWT3VwaEk2cGxVQnVwQUM4cFRnTFdGUERmN0t3REVIbmdOMkJRNXNvSEkycVViVWhFYlJ5QzlCQ2Z1eFFrc2lGOWJBeHEwcUM0amI1M05QWGhfMVp5NDZKR2dpc0pCd092VHJYTE5EaU5ESmZORUNWM2gzdjkwT0hsODRLZDNOUlFNRTdUNHVGQ1dfX1dXdWRFUlNOVnZ0ZlBfc01xNWgyMnA2VW1FVENZNXZPcm1wd1RF?oc=5",
-     "published": "2026-11-24T03:12:55+00:00"
-    },
-    {
-     "source": "NFHS Network",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYTk5anI2RXFwb2VCUElwYU5pUUE3aFRvZlFEa2dYSTZKUnhDNkp4SXhQQUl5X21pTmJNTk5CMlI0R1RPTFJTanZYYnZ3c3k3dHlVN1ZpX2l5UXh0U0dUamFpbHUyaU1abVEtWE9LZDNlMDBqS2EzalppNElMLXU1cWZ0RjZLUE45bVE?oc=5",
-     "published": "2026-11-24T04:12:43+00:00"
-    },
-    {
-     "source": "NFHS Network",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNUJnRmxyeG5IWmlmMndQVVVsZDQyWmc1VW1aUm9pVXRGajM2cVRHd3lqRk4tSEpoYU5qNDVUT292b1FtWXZjNDFQNEl4R25URFUtUWktNUlrTE5WcFFxbU5aRk83b2swVVZidG1GdmhiT2tNZkN1b0txTkkzTDdNcnBOQ0tkVERBM2c?oc=5",
-     "published": "2026-11-24T05:10:59+00:00"
-    },
-    {
-     "source": "MaxPreps",
-     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaHRTU2pWdThrVzBoaThxSm1BMG9BM1dVRHRKMkotanVEOGhXbldFS3FzYVZLV21tTGRfTDR0RU9IU2RSMWpiMHVRVUFSVkRQb19iNXpHYlZzSGJHTkRQMGQtUWE4SHNtS0ljakI3ZjdlakcwMVFQTEVSQzJjUFZkYWdEbEsyU2hJUGw2elVZb01KNDl4Yng0X3h3UGlzd0FrRjQ4QkxwalkyOTQ2T2FzS2k2VThOa3pkSVJNWkVfRkFhU0paLUI1dk4zZw?oc=5",
-     "published": "2026-11-24T05:15:31+00:00"
-    },
-    {
-     "source": "NFHS Network",
-     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNVVvLW8tVW9jMlV4TVVvSm1WbllNZVJnRUpQTHRNU0xvazF2X1lraUFBOE5wUERaZjJPa2V3em0zT3VsaUpXdWtmOUh4TkQtUmR5dlFZS0N5YkRDMzF4aXA5YTdkbG80eXZ6RGF3WHROTXo1RTVvUnFYamU4a3VqUkViZw?oc=5",
-     "published": "2026-11-24T13:55:46+00:00"
-    },
-    {
-     "source": "MaxPreps",
-     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1RVVBiZXpMRWxjTVZMdndMenR6S3dldkNIV1FORHdaVUxHUHhHODBJT0RHSjNWcnI2ZzhhTURKcW5aSDZpN2Ntb1pCaXdSY3hQVFVzXy1idmtiSE1pdGdJY0l1NkJJSmZCblRwQTRtZjlmWl9pOTV6b1ozNA?oc=5",
-     "published": "2026-11-24T16:00:35+00:00"
-    },
-    {
-     "source": "NFHS Network",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZllpZHE0YVl1Qmp2OW9qb001NTBIc1BiRUYxQjEzeTRIZlFxai0tYkZheUQzQVlxc0xZTHp5RV84bDI1alpCV1hfN0F5OVpfaUhJOC1PWkVWZ1pIbHBSZXRKdXQwam1kSnlZUG1yUklWMjJBWE1YUjl4Q05DOWRnWGlvcm1keG5aX05V?oc=5",
-     "published": "2026-11-24T17:34:06+00:00"
-    },
-    {
-     "source": "MaxPreps",
-     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYjMtajk2d1B5M05XdERSR0JNWDFUTEx4aEowOERDT2dLYjR4ejNfbW1ic0VwWHhBLTRyT1lpMUZPeVJHSWVOS0tMdkxGbHRnUmxtamNEbXRFd2RCejJ2cnVib01MdS1PTGRBY1FaMWhrd1VFbTQ5dkZfNnZkQXlfX0M4UEpRcm5zV08zeHplWDZsWjA3YXMwcVJKVTBnQjVXeXVIVzR0V2JkVEoxV2JVQUJQU2xWSXFLY3BzYkk4a3pRYjR5S1A5ak5tVkk?oc=5",
-     "published": "2026-11-24T20:18:21+00:00"
-    },
-    {
-     "source": "MaxPreps",
-     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORDR6OWg0dWZXQVh6MGUxUnEtOEFQYU5XMTBRTjlOTk5CUHBzUnlUV3ZEYTdPeURjclB0T2lPMnRpNFZ1a3ZhTDhuekJFbDRUWTlXQmxTR05mWVZVVHAxVFZlLTg2bWpxcV9ZYmtZVDlBNWQ1b2VGSXVpc1E1YTl2eTBRUTdHWUd0elBiNV83SFZ2dlA3UjVhVjBiVVhnMTFGQkZwZk5zdGREXzdHSl9iTGNkWE56cmJxZmpjVkZSR0c4cXVRRXV3NEhiXzgyV05wcE5CUHVZOW1jTHctQUE?oc=5",
-     "published": "2026-11-24T20:59:28+00:00"
-    },
-    {
-     "source": "NFHS Network",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOTNLaDc0VmtjX2lTM1VmSmNoUFlzQlZob0R1clFva01OcDJzSk05SVJ2SWlNSFBpdEpLakZfVTJXVUlqb3pIejFQMDhmRHlaWUllb2pBTFBvVngxLV8tVklTQ09wYmZjblFvWjhPWjNheWtWYTBSWXNkTmtkSS1pNGpvRWIwWXdK?oc=5",
-     "published": "2026-11-24T21:46:45+00:00"
-    },
-    {
-     "source": "NFHS Network",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbG1FdzJzbTZSNmJmemVEU3VXVlVmdkxOZVluYksxc3Z5cEt2WlJPUFdKdk5XSFBtU3hUOWhpSllJa3pDRVJCX2p5dWRla1hrWTFaOGlISUtiU3pJaXFxcHpjdUpNSzFjRy03aHl4bnQzaVZyT2VRVmdrT0tFTk9Xc3Bud0xNcXpRZXc?oc=5",
-     "published": "2026-11-24T21:55:00+00:00"
-    },
-    {
-     "source": "NFHS Network",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPS0N2anVWT2c4WWwzTHNVcmxzQndZZ2REUUZoejk2QUx3R1cxZENkV1k5VFBQYkVDU0RhRDRiOEZmbkUyZ1Z2MVBrZGFJUlEtcEVDTFRodTFyOTJXWmxxS1hIRnNXUi10Vk8zXzhMN0NMc21jSF82dmNQdWcwR2JNaTZzSXRJMFp2?oc=5",
-     "published": "2026-11-25T03:46:21+00:00"
-    }
-   ],
-   "latest": "2026-11-27T20:50:24+00:00",
-   "outlets": 2,
-   "base": 12,
-   "why": [
-    "Covered by 2 outlets"
-   ]
   },
   {
    "id": "0b937d26e5eba69d",
@@ -3337,43 +3242,6 @@
    "outlets": 1,
    "base": 6,
    "why": []
-  },
-  {
-   "id": "d668b28e2dd7e660",
-   "title": "Phoenix Children's� Named Grand Marshal for 39th Annual APS Electric Light Parade",
-   "link": "https://www.phoenix.gov/newsroom/parks-news/phoenix-children-s--named-grand-marshal-for-39th-annual-aps-elec.html",
-   "summary": "Phoenix Children's� will serve as grand marshal for the 39th Annual APS Electric Light Parade, which takes place at 7 p.m. Saturday, Dec. 5, in Phoenix.",
-   "source": "City of Phoenix Newsroom",
-   "feed": "phx-gov",
-   "group": "Official",
-   "cities": [
-    "Phoenix"
-   ],
-   "breaking": false,
-   "cat": "Community",
-   "published": "2026-11-25T16:48:00+00:00",
-   "first_seen": "2026-11-26T21:28:57.337518+00:00",
-   "members": [
-    {
-     "source": "City of Phoenix Newsroom",
-     "link": "https://www.phoenix.gov/newsroom/parks-news/phoenix-children-s--named-grand-marshal-for-39th-annual-aps-elec.html",
-     "published": "2026-11-25T16:48:00+00:00"
-    },
-    {
-     "source": "Signals AZ",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbXhvblRRQTluYVItdWFncHZrbjVlbDlzT19aV1BYNkVUWXRMUEZ1UURMc1JKcF93YUtkZjdObmtYTzBMWW5DbGhDYUpXdmxaeHJOZ28yZWg5eVNQaGQ3V1NORUF4UGZWYmhRUnZNOGtNTVZiM1RmN0I1YVFDMHg1ek1KUXFYS0JnZ3gweGNnZ0FMdmc?oc=5",
-     "published": "2026-11-27T14:10:49+00:00"
-    }
-   ],
-   "latest": "2026-11-27T14:10:49+00:00",
-   "outlets": 2,
-   "base": 31,
-   "why": [
-    "Covered by 2 outlets",
-    "Strong hook for a post",
-    "Reported by a local outlet",
-    "City named in the headline"
-   ]
   },
   {
    "id": "be83ee7a0f1bb85f",
@@ -13740,6 +13608,37 @@
    "why": []
   },
   {
+   "id": "d668b28e2dd7e660",
+   "title": "Phoenix Children's� Named Grand Marshal for 39th Annual APS Electric Light Parade",
+   "link": "https://www.phoenix.gov/newsroom/parks-news/phoenix-children-s--named-grand-marshal-for-39th-annual-aps-elec.html",
+   "summary": "Phoenix Children's� will serve as grand marshal for the 39th Annual APS Electric Light Parade, which takes place at 7 p.m. Saturday, Dec. 5, in Phoenix.",
+   "source": "City of Phoenix Newsroom",
+   "feed": "phx-gov",
+   "group": "Official",
+   "cities": [
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Community",
+   "published": "2026-11-25T16:48:00+00:00",
+   "first_seen": "2026-11-26T21:28:57.337518+00:00",
+   "members": [
+    {
+     "source": "City of Phoenix Newsroom",
+     "link": "https://www.phoenix.gov/newsroom/parks-news/phoenix-children-s--named-grand-marshal-for-39th-annual-aps-elec.html",
+     "published": "2026-11-25T16:48:00+00:00"
+    }
+   ],
+   "latest": "2026-11-25T16:48:00+00:00",
+   "outlets": 1,
+   "base": 23,
+   "why": [
+    "Strong hook for a post",
+    "Reported by a local outlet",
+    "City named in the headline"
+   ]
+  },
+  {
    "id": "b0e5043dd3fd9f56",
    "title": "Cave Creek Town Hall closed for Thanksgiving",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZF80azBQZ3l5VWd0ZDZ0dkNCYVJ4enRqTVlSS0RyOFBDbFZwS2dpTGdEVnRScE90NHllMVZxc1JnRjNJLXY4LUhQaXl3bjdPV1pIaTUyTXI0NTZ3VmZPQnVrYkMwMy1HWjlYeEs5cklTeXhpYXRTWFNGNWNPTmNvR0ZCNmtVNDF0T2s4bjBDZFRnMFU3cDY3Z3FIN1hUSkRlejdYZHAxVTFMNU1NZWRpSENXemdIMFVkdVE?oc=5",
@@ -16760,6 +16659,101 @@
    "base": 12,
    "why": [
     "Reported by a local outlet"
+   ]
+  },
+  {
+   "id": "094317a6254d92f7",
+   "title": "AZ Compass Prep Boys Varsity Basketball @ ASUPSP",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUU5PR0RlRnlKbUhDNDhhY243TmNMTVJKNHZnZUphdWt4MDZ4M09kX1o5dWd1blBvUm8wYm42Zjl0LTdNbzFibEtLN1dhY0RWT3VwaEk2cGxVQnVwQUM4cFRnTFdGUERmN0t3REVIbmdOMkJRNXNvSEkycVViVWhFYlJ5QzlCQ2Z1eFFrc2lGOWJBeHEwcUM0amI1M05QWGhfMVp5NDZKR2dpc0pCd092VHJYTE5EaU5ESmZORUNWM2gzdjkwT0hsODRLZDNOUlFNRTdUNHVGQ1dfX1dXdWRFUlNOVnZ0ZlBfc01xNWgyMnA2VW1FVENZNXZPcm1wd1RF?oc=5",
+   "summary": "",
+   "source": "MaxPreps",
+   "feed": "gn-chandler",
+   "group": "News search",
+   "cities": [
+    "Chandler",
+    "Paradise Valley",
+    "Scottsdale",
+    "Gilbert",
+    "Queen Creek",
+    "Fountain Hills",
+    "Tolleson",
+    "Glendale",
+    "Tempe",
+    "Buckeye",
+    "Mesa",
+    "Phoenix"
+   ],
+   "breaking": false,
+   "cat": "Sports",
+   "published": "2026-11-24T03:12:55+00:00",
+   "first_seen": "2026-11-25T23:33:49.250132+00:00",
+   "members": [
+    {
+     "source": "MaxPreps",
+     "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUU5PR0RlRnlKbUhDNDhhY243TmNMTVJKNHZnZUphdWt4MDZ4M09kX1o5dWd1blBvUm8wYm42Zjl0LTdNbzFibEtLN1dhY0RWT3VwaEk2cGxVQnVwQUM4cFRnTFdGUERmN0t3REVIbmdOMkJRNXNvSEkycVViVWhFYlJ5QzlCQ2Z1eFFrc2lGOWJBeHEwcUM0amI1M05QWGhfMVp5NDZKR2dpc0pCd092VHJYTE5EaU5ESmZORUNWM2gzdjkwT0hsODRLZDNOUlFNRTdUNHVGQ1dfX1dXdWRFUlNOVnZ0ZlBfc01xNWgyMnA2VW1FVENZNXZPcm1wd1RF?oc=5",
+     "published": "2026-11-24T03:12:55+00:00"
+    },
+    {
+     "source": "NFHS Network",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYTk5anI2RXFwb2VCUElwYU5pUUE3aFRvZlFEa2dYSTZKUnhDNkp4SXhQQUl5X21pTmJNTk5CMlI0R1RPTFJTanZYYnZ3c3k3dHlVN1ZpX2l5UXh0U0dUamFpbHUyaU1abVEtWE9LZDNlMDBqS2EzalppNElMLXU1cWZ0RjZLUE45bVE?oc=5",
+     "published": "2026-11-24T04:12:43+00:00"
+    },
+    {
+     "source": "NFHS Network",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNUJnRmxyeG5IWmlmMndQVVVsZDQyWmc1VW1aUm9pVXRGajM2cVRHd3lqRk4tSEpoYU5qNDVUT292b1FtWXZjNDFQNEl4R25URFUtUWktNUlrTE5WcFFxbU5aRk83b2swVVZidG1GdmhiT2tNZkN1b0txTkkzTDdNcnBOQ0tkVERBM2c?oc=5",
+     "published": "2026-11-24T05:10:59+00:00"
+    },
+    {
+     "source": "MaxPreps",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaHRTU2pWdThrVzBoaThxSm1BMG9BM1dVRHRKMkotanVEOGhXbldFS3FzYVZLV21tTGRfTDR0RU9IU2RSMWpiMHVRVUFSVkRQb19iNXpHYlZzSGJHTkRQMGQtUWE4SHNtS0ljakI3ZjdlakcwMVFQTEVSQzJjUFZkYWdEbEsyU2hJUGw2elVZb01KNDl4Yng0X3h3UGlzd0FrRjQ4QkxwalkyOTQ2T2FzS2k2VThOa3pkSVJNWkVfRkFhU0paLUI1dk4zZw?oc=5",
+     "published": "2026-11-24T05:15:31+00:00"
+    },
+    {
+     "source": "NFHS Network",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNVVvLW8tVW9jMlV4TVVvSm1WbllNZVJnRUpQTHRNU0xvazF2X1lraUFBOE5wUERaZjJPa2V3em0zT3VsaUpXdWtmOUh4TkQtUmR5dlFZS0N5YkRDMzF4aXA5YTdkbG80eXZ6RGF3WHROTXo1RTVvUnFYamU4a3VqUkViZw?oc=5",
+     "published": "2026-11-24T13:55:46+00:00"
+    },
+    {
+     "source": "MaxPreps",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1RVVBiZXpMRWxjTVZMdndMenR6S3dldkNIV1FORHdaVUxHUHhHODBJT0RHSjNWcnI2ZzhhTURKcW5aSDZpN2Ntb1pCaXdSY3hQVFVzXy1idmtiSE1pdGdJY0l1NkJJSmZCblRwQTRtZjlmWl9pOTV6b1ozNA?oc=5",
+     "published": "2026-11-24T16:00:35+00:00"
+    },
+    {
+     "source": "NFHS Network",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZllpZHE0YVl1Qmp2OW9qb001NTBIc1BiRUYxQjEzeTRIZlFxai0tYkZheUQzQVlxc0xZTHp5RV84bDI1alpCV1hfN0F5OVpfaUhJOC1PWkVWZ1pIbHBSZXRKdXQwam1kSnlZUG1yUklWMjJBWE1YUjl4Q05DOWRnWGlvcm1keG5aX05V?oc=5",
+     "published": "2026-11-24T17:34:06+00:00"
+    },
+    {
+     "source": "MaxPreps",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYjMtajk2d1B5M05XdERSR0JNWDFUTEx4aEowOERDT2dLYjR4ejNfbW1ic0VwWHhBLTRyT1lpMUZPeVJHSWVOS0tMdkxGbHRnUmxtamNEbXRFd2RCejJ2cnVib01MdS1PTGRBY1FaMWhrd1VFbTQ5dkZfNnZkQXlfX0M4UEpRcm5zV08zeHplWDZsWjA3YXMwcVJKVTBnQjVXeXVIVzR0V2JkVEoxV2JVQUJQU2xWSXFLY3BzYkk4a3pRYjR5S1A5ak5tVkk?oc=5",
+     "published": "2026-11-24T20:18:21+00:00"
+    },
+    {
+     "source": "MaxPreps",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORDR6OWg0dWZXQVh6MGUxUnEtOEFQYU5XMTBRTjlOTk5CUHBzUnlUV3ZEYTdPeURjclB0T2lPMnRpNFZ1a3ZhTDhuekJFbDRUWTlXQmxTR05mWVZVVHAxVFZlLTg2bWpxcV9ZYmtZVDlBNWQ1b2VGSXVpc1E1YTl2eTBRUTdHWUd0elBiNV83SFZ2dlA3UjVhVjBiVVhnMTFGQkZwZk5zdGREXzdHSl9iTGNkWE56cmJxZmpjVkZSR0c4cXVRRXV3NEhiXzgyV05wcE5CUHVZOW1jTHctQUE?oc=5",
+     "published": "2026-11-24T20:59:28+00:00"
+    },
+    {
+     "source": "NFHS Network",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOTNLaDc0VmtjX2lTM1VmSmNoUFlzQlZob0R1clFva01OcDJzSk05SVJ2SWlNSFBpdEpLakZfVTJXVUlqb3pIejFQMDhmRHlaWUllb2pBTFBvVngxLV8tVklTQ09wYmZjblFvWjhPWjNheWtWYTBSWXNkTmtkSS1pNGpvRWIwWXdK?oc=5",
+     "published": "2026-11-24T21:46:45+00:00"
+    },
+    {
+     "source": "NFHS Network",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbG1FdzJzbTZSNmJmemVEU3VXVlVmdkxOZVluYksxc3Z5cEt2WlJPUFdKdk5XSFBtU3hUOWhpSllJa3pDRVJCX2p5dWRla1hrWTFaOGlISUtiU3pJaXFxcHpjdUpNSzFjRy03aHl4bnQzaVZyT2VRVmdrT0tFTk9Xc3Bud0xNcXpRZXc?oc=5",
+     "published": "2026-11-24T21:55:00+00:00"
+    },
+    {
+     "source": "NFHS Network",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPS0N2anVWT2c4WWwzTHNVcmxzQndZZ2REUUZoejk2QUx3R1cxZENkV1k5VFBQYkVDU0RhRDRiOEZmbkUyZ1Z2MVBrZGFJUlEtcEVDTFRodTFyOTJXWmxxS1hIRnNXUi10Vk8zXzhMN0NMc21jSF82dmNQdWcwR2JNaTZzSXRJMFp2?oc=5",
+     "published": "2026-11-25T03:46:21+00:00"
+    }
+   ],
+   "latest": "2026-11-25T03:46:21+00:00",
+   "outlets": 2,
+   "base": 12,
+   "why": [
+    "Covered by 2 outlets"
    ]
   },
   {
